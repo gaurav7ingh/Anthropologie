@@ -296,16 +296,43 @@
     <div class="bg_modal">
         <div class="div_content">
             <div class="close">+</div>
+
+            <!-- sign in -->
             <h1>Sign in</h1>
             <hr>
-            <form action="">
+            <form id="signinform" action="">
                 <input id="email" placeholder="Enter Email" type="text">
                 <input id="password" placeholder="Enter Password" type="text">
                 <input class="submitButton" type="submit" value="NEXT">
+                <input class="mobileNumber" type="submit" value="USE MOBILE NUMBER INSTED">
+                <hr>
             </form>
+            <!-- sign UP -->
+            <h1 id="signUp_tag">Sign Up</h1>
+            <P>Welcome! It's quick and easy to set up an account</P>
+            <form action="">
+                <input type="submit" value="CREAT AN ACCOUNT" id="signUp">
+            </form>
+
         </div>
     </div>
    
+    <div class="bg_modal_creat">
+        <div class="div_content_creat">
+            <div class="close_creat">+</div>
+
+            <!-- sign in -->
+            <h1>Creat account</h1>
+            <hr>
+            <form id="signupform" action="">
+                <input id="email_creat" placeholder="Enter Email" type="text">
+                <input id="mobile_creat" placeholder="Enter mobile number" type="number">
+                <input id="password_creat" placeholder="Enter password" type="text">
+                <input class="submitButton_creat" type="submit" value="NEXT">
+        </div>
+    </div>
+
+
 </body>
 </html>
 <script src="Sign.js">

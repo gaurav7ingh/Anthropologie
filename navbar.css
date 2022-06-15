@@ -255,4 +255,79 @@ li{
     transform: rotate(45deg);
     cursor: pointer;
    }
+    .mobileNumber{
+        background-color: transparent;
+        margin-bottom: 10px;
+    }
+    #signUp_tag{
+        margin: 10px 0px;
+    }
+    #signUp{
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+
+    /* creat account */
     
+    
+    
+    .bg_modal_creat{
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+        /* opacity: 0.3; */
+        position: absolute;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: none;
+        
+       }
+    
+       .div_content_creat{
+        width: 500px;
+        height: 600px;
+        background-color:white;
+        text-align: center;
+        padding: 20px;
+        position: relative;
+       }
+       .div_content_creat>h1{
+        margin-bottom: 10px;
+       }
+       input{
+        display: block;
+        margin: auto;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-top: 20px;
+        font-size: 20px;
+        width: 80%;
+       }
+       .submitButton_creat{
+            width: 80%;
+            padding: 10px;
+            background-color: gray;
+            color: white;
+            cursor: pointer;
+       }
+       .submitButton_creat:hover{
+        background-color: white;
+        color: black;
+       }
+       .close_creat{
+        position: absolute;
+        top: 0;
+        font-size: 30px;
+        right: 14px;
+        transform: rotate(45deg);
+        cursor: pointer;
+       }
+        .mobileNumber_creat{
+            background-color: transparent;
+            margin-bottom: 10px;
+        }
+
+
