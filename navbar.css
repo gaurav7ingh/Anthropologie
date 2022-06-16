@@ -3,7 +3,15 @@
     margin: 0%;
 
 }
-
+#signIn_signUp>p{
+    margin-top: 10px;
+    margin-right: 10px;
+    border: 1px solid;
+    padding: 5px;
+    color: white;
+    background-color: blue;
+    cursor: pointer;
+}
 #navbar{
   
     border-top: 1px solid;
@@ -88,9 +96,17 @@ li{
         display: block;
         margin: auto;
     }
-    hr{
+    h1+hr{
         width: 80%;
         margin: auto;
+        margin-bottom: 20px;
+    }
+    hr+p{
+        width: 80%;
+        margin: auto;
+    }
+    input+p{
+        margin-top: 20px;
     }
     a{
         color: black;
@@ -330,4 +346,7 @@ li{
             margin-bottom: 10px;
         }
 
+        #btnlog{
+            margin-top: 20px;
+        }
 

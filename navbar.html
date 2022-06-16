@@ -12,6 +12,7 @@
 <body>
     <div id="signIn_signUp">
         <button> Sign in / Sign Up</button>
+        
     </div>
     <div id="forSticky">
         <div class="companyLogo_searchBar">
@@ -36,7 +37,7 @@
             <div id="inner">
                 <ul>
                     <li>
-                        <div><a href="#"">New!</a>
+                        <div><a href="https://www.youtube.com/"">New!</a>
                         <div class="submenu">
                             <div class="submenu-1">
                                     <div><h4>Shop by category</h4>
@@ -300,9 +301,10 @@
             <!-- sign in -->
             <h1>Sign in</h1>
             <hr>
+            <p>Sign in so you can save items to your wishlists, track your orders, and check out faster!</p>
             <form id="signinform" action="">
-                <input id="email" placeholder="Enter Email" type="text">
-                <input id="password" placeholder="Enter Password" type="text">
+                <input id="email" placeholder="Enter Email" type="text" required>
+                <input id="password" placeholder="Enter Password" type="text" minlength="6" >
                 <input class="submitButton" type="submit" value="NEXT">
                 <input class="mobileNumber" type="submit" value="USE MOBILE NUMBER INSTED">
                 <hr>
@@ -324,11 +326,15 @@
             <!-- sign in -->
             <h1>Creat account</h1>
             <hr>
+            <p>Welcome to Anthropologie! It's quick and easy to set up an account</p>
             <form id="signupform" action="">
                 <input id="email_creat" placeholder="Enter Email" type="text">
                 <input id="mobile_creat" placeholder="Enter mobile number" type="number">
-                <input id="password_creat" placeholder="Enter password" type="text">
+                <input id="password_creat" placeholder="Enter password" type="text" minlength="6">
+                <p>Enter your mobile number to receive a verification code. <br> Note: This action does not enroll you in SMS marketing messages.</p>
                 <input class="submitButton_creat" type="submit" value="NEXT">
+
+                </form>
         </div>
     </div>
 
