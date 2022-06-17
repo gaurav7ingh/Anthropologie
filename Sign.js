@@ -35,7 +35,7 @@ document
     let password = document.querySelector("#password").value;
     // console.log(email, password);
     if (checkfunction(email, password) == true) {
-      alert("Sign up Successul");
+      alert("Login Successful");
       // let signName = (document.querySelector("#signIn_signUp>button").innerText = email);
 
       login.push(userObjsignin);
@@ -45,7 +45,7 @@ document
       window.location.reload();
       close();
     } else {
-      alert("Something wrong");
+      alert("Email Or Password Wrong");
     }
   });
 // console.log(arr);
@@ -87,7 +87,7 @@ document
     if (mobile.length == 10) {
       if (checksignup(mobile) == true) {
         userArr.push(userObj);
-        alert("account created succesfully");
+        alert("Your account has been created");
         localStorage.setItem("userData", JSON.stringify(userArr));
         window.location.reload();
         close_creat();
@@ -116,6 +116,7 @@ document
   .querySelector("#signIn_signUp>p")
   .addEventListener("click", function () {
     // localStorage.getItem("loginObj")
+    alert("Logout Successful")
     localStorage.removeItem("loginObj");
     window.location.reload();
   });
