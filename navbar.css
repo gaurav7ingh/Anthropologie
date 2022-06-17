@@ -69,7 +69,7 @@ li>div {
     /* border: 1px solid; */
     font-family: "Avenir Medium", sans-serif;
     cursor: pointer;
-    r
+    
 }
 
 .submenu {
@@ -84,10 +84,10 @@ li>div {
     background-color: white;
 }
 
-.submenu {
+/* .submenu {
     /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
     /* border: 1px solid; */
-}
+
 
 .submenu-1 {
     /* margin-right: 20px; */
