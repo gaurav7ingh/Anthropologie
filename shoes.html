@@ -10,6 +10,8 @@
         *{
             padding: 0px;
             margin: 0px;
+            font-family:  Arial, Helvetica, sans-serif;
+            box-sizing: border-box;
         }
         #complete{
             /* border: 1px solid red; */
@@ -47,29 +49,32 @@
             /* border: 1px solid blue; */
             display: flex;
             width:400px;
-            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+            /* box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; */
         
         }
         #shoes>div:nth-child(1)>p{
             margin-top: 13px;
             margin-left: 13px;
-            color: red;
+            color: #555;;
 
         }
         #shoes>div:last-child{
             display: flex;
             /* border: 1px solid green; */
             width:200px;
-            margin-left: 100px;
+            margin-left: 200px;
+            margin-top: 12px;
         }
-        select{
-            margin-left: 20px;
-            width:50%;
+        #sort{
+            /* margin-left: 20px; */
+            width:60%;
             font-size: 15px;
-            color: red;
+            color: rgb(92,92,95);
+            padding: 5px;
         }
         #shoes>div:last-child>p{
-            color:black
+            color:black;
+            margin-top: 7px;
         }
         #images{
             /* border: 1px solid green; */
@@ -77,7 +82,7 @@
             margin-top: 20px;
             display: grid;
             grid-template-columns: repeat(4,1fr);
-            grid-template-rows: repeat(5,400px);
+            grid-template-rows: repeat(5,410px);
             gap: 15px;
         }
         /* #images>div{
@@ -96,7 +101,7 @@
             margin-top: 10px;
         }
         #images>div>p+p{
-            color:red;
+            color:#555;
             margin-top: 5px;
             font-size: 15px;
         }
@@ -146,7 +151,15 @@
             /* border:1px solid red; */
             display: flex;
             margin-top: 10px;
+            /* position: relative; */
         }
+        #images>div{
+            position: relative;
+        }
+        .coloursForPic{
+            position:absolute;
+            bottom:0px;
+           }
         #upper>div:first-child{
             /* border: 1px solid green; */
             
@@ -154,12 +167,17 @@
             height: 600px;
             display: block;
             margin-top: 29px;
+            margin-right: 40px;
             
         }
         a{
             margin-top: 20px;
             text-decoration: none;
             display: block;
+            color: #555;
+        }
+        a:hover{
+            text-decoration: underline;
         }
         #shoes>div:nth-child(2){
             /* border: 1px solid red; */
@@ -189,6 +207,89 @@
         #upper>div:first-child>h2{
             margin-top: 20px;
         } 
+        #price~h2{
+            font-weight: normal;
+            font-size: 20px;
+        }
+        #price{
+            font-weight: normal;
+            font-size: 20px;
+        }
+        #btn{
+          margin-left: 100px;
+        }
+        #images>div>p>button{
+            height:20px;
+            width:20px;
+            border-radius: 50%;
+            margin-right: 5px;
+           }
+           /* .coloursForPic{
+            position:absolute;
+            bottom:0px;
+           } */
+           .coloursForPic>button{
+            border:0.5px solid #5555;
+           }
+        @media all and (min-width:784px) and (max-width:1074px){
+        #images{
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(7,410px);
+            /* width:100%; */
+            gap:10px;
+        }
+        #images>div{
+            /* width:100%; */
+            
+        }
+        /* #complete{
+            width: 400px;
+            height: 380px;
+        } */
+        #box{
+            width:100%;
+        }
+        #shoes>div:nth-child(1)>p{
+            margin-left: 4px;
+        }
+        #upper{
+            width: 100%;
+        }
+        
+
+    }
+    @media all and (min-width:200px) and (max-width:783px){
+        #images{
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(10,400px);
+            /* width:100%; */
+            gap:10px;
+        }
+        
+        /* #complete{
+            width: 400px;
+            height: 380px;
+        } */
+        #box{
+            width:100%;
+        }
+        #shoes>div:nth-child(1)>p{
+            margin-left: 4px;
+        }
+        #upper>div:first-child{
+            display: none;
+        }
+        /* #upper>div:first-child>h2{
+           margin-top: 0px;
+           height: 0px;
+           display: none;
+        } */
+        #upper{
+            width:100%;
+        }
+    
+    }
+
 
     
     
@@ -209,12 +310,12 @@
         <div>
             <h3>Browse by:</h3>
             <hr>
-            <a href="">Home</a>
+            <a href="homepage.html">Home</a>
             <a href="clothing.html">clothing</a>
-            <a href="Beauty.html">Beauty & Wellness</a>
+            <a href="beauty1.html">Beauty & Wellness</a>
             <a href="">Homes and furniture</a>
             <a href="">Weddings</a>
-            <a href="">Sale</a>
+            <a href="sale.html">Sale</a>
             <a href="">Garden & outdoor</a>
             <h3>Filter by:</h3>
             <hr>
@@ -242,14 +343,14 @@
                     <option value="">Featured</option>
                     <option value="lowhigh">Price:Low to High</option>
                     <option value="highlow">Price:High to Low</option>
-                    <option value="shl">Size:High to Low</option>
-                    <option value="slh">Size:Low to High</option>
-                    <option value="">Rating</option>
+                    <option value="Newest">Newest</option>
+                    <option value="Bestselling">Bestselling</option>
+                
                     <option value="az">A-Z</option>
                     <option value="za">Z-A</option>
                 </select>
                 <!-- <button class="btn"><a class="cloth"href=""><</a></button> -->
-                <button id="btn"><a id="cloth" href="clothing.html">></a></button>
+                <button id="btn"><a id="cloth" href="beauty1.html">2</a></button>
             </div>
         </div>
         <div id="images">
@@ -264,104 +365,168 @@
    let item=[{image:"https://images.ctfassets.net/5de70he6op10/7hE2nHay4uPG8CfR2VjyLD/72fef4a91b5d09b45ec62e03f4697dd5/060922_30offSelectSwim_OutCatTile_copy_2.jpg?w=546&q=80&fm=webp",
    name:"",
    price:"",
-   size:""
+   size:"",
+   catagory:"",
+   img:"",
+
 
    },
    {image:"https://images.urbndata.com/is/image/Anthropologie/60058286_029_b2?$an-category$&fit=constrain&fmt=webp&hei=1046&qlt=80&wid=698",
    name:"Fisher man sport sandal",
    price:125,
-   size:5
+   size:5,
+   catagory: "Bestselling",
+   img: ['url("https://images.urbndata.com/is/image/Anthropologie/65972366_067_s?fit=constrain&hei=56&qlt=75")',
+    'url( "https://images.urbndata.com/is/image/Anthropologie/65972366_040_s?fit=constrain&hei=56&qlt=75")'],
    },
    {image:"https://images.urbndata.com/is/image/Anthropologie/60385945_009_b3?$an-category$&fit=constrain&fmt=webp&hei=1046&qlt=80&wid=698",
    name:"Seycheele Bits N' Pieces Wovens Flats",
    price:99,
-   size:6
+   size:6,
+   catagory: "Newest",
+   img: ['url("https://images.urbndata.com/is/image/Anthropologie/65972374_000_s?fit=constrain&hei=56&qlt=75")']
 
    },
    {image:"https://images.urbndata.com/is/image/Anthropologie/65368508_001_b2?$an-category$&fit=constrain&fmt=webp&hei=1046&qlt=80&wid=698",
    name:"Pilcro Twisted Leather Slides",
    price:130,
-   size:5
+   size:5,
+   catagory: "Bestselling",
+   img: ['url("https://images.urbndata.com/is/image/Anthropologie/69266591_001_s?fit=constrain&hei=56&qlt=75")',
+    'url("https://images.urbndata.com/is/image/Anthropologie/69266591_010_s?fit=constrain&hei=56&qlt=75")',
+    'url("https://images.urbndata.com/is/image/Anthropologie/69266591_040_s?fit=constrain&hei=56&qlt=75")',
+    'url("https://images.urbndata.com/is/image/Anthropologie/69266591_070_s?fit=constrain&hei=56&qlt=75")',
+	'url("https://images.urbndata.com/is/image/Anthropologie/69266591_072_s?fit=constrain&hei=56&qlt=75")'],
    },
    {image:"https://images.urbndata.com/is/image/Anthropologie/64998826_012_b2?$an-category$&fit=constrain&fmt=webp&hei=1046&qlt=80&wid=698",
    name:"Guilhrmina Square-Toe Ballet Flats",
    price:120,
-   size:5
+   size:5,
+   catagory: "Newest",
+   img: ['url("https://images.urbndata.com/is/image/Anthropologie/69267698_001_s?fit=constrain&hei=56&qlt=75")',
+    'url("https://images.urbndata.com/is/image/Anthropologie/69267698_072_s?fit=constrain&hei=56&qlt=75")',
+    'url("https://images.urbndata.com/is/image/Anthropologie/69267698_070_s?fit=constrain&hei=56&qlt=75")'],
    },
    {image:"https://images.urbndata.com/is/image/Anthropologie/68829134_024_b2?$an-category$&fit=constrain&fmt=webp&hei=1046&qlt=80&wid=698",
    name:"Guilhrmina Pointed-Toe Mary Janes",
    price:140,
-   size:6
+   size:6,
+   catagory: "Bestselling",
+   img: ['url("https://images.urbndata.com/is/image/Anthropologie/69267698_001_s?fit=constrain&hei=56&qlt=75")',
+    'url("https://images.urbndata.com/is/image/Anthropologie/69267698_072_s?fit=constrain&hei=56&qlt=75")',
+    'url("https://images.urbndata.com/is/image/Anthropologie/69267698_070_s?fit=constrain&hei=56&qlt=75")'],
    },
    {image:"https://images.urbndata.com/is/image/Anthropologie/63060966_016_b2?$an-category$&fit=constrain&fmt=webp&hei=1046&qlt=80&wid=698",
    name:"Kelsi Dagger Brooklyn Lens Suede Loafers",
    price:130,
-   size:7
+   size:7,
+   catagory: "Newest",
+   img: ['url("https://images.urbndata.com/is/image/Anthropologie/76183573_010_s?fit=constrain&hei=56&qlt=75")'],
    },
    {image:"https://images.urbndata.com/is/image/Anthropologie/68947142_071_b?$an-category$&fit=constrain&fmt=webp&hei=1046&qlt=80&wid=698",
    name:"Angel Alarcon Patent-Lather Square-Toe Flats",
    price:150,
-   size:7
+   size:7,
+   catagory: "Newest",
+   img: ['url("https://images.urbndata.com/is/image/Anthropologie/76183573_010_s?fit=constrain&hei=56&qlt=75")'],
    },
    {image:"https://images.urbndata.com/is/image/Anthropologie/67426239_066_b16?$an-category$&fit=constrain&fmt=webp&hei=1046&qlt=80&wid=698",
    name:"Angel Alarcon Strappy Heels",
    price:150,
-   size:6
+   size:6,
+   catagory: "Bestselling",
+   img: ['url("https://images.urbndata.com/is/image/Anthropologie/69267698_001_s?fit=constrain&hei=56&qlt=75")',
+    'url("https://images.urbndata.com/is/image/Anthropologie/69267698_072_s?fit=constrain&hei=56&qlt=75")',
+    'url("https://images.urbndata.com/is/image/Anthropologie/69267698_070_s?fit=constrain&hei=56&qlt=75")'],
    },
    {image:"https://images.urbndata.com/is/image/Anthropologie/68774272_085_b14?$an-category$&fit=constrain&fmt=webp&hei=1046&qlt=80&wid=698",
    name:"CAVERLER Maize Heels",
    price:185,
-   size:7
+   size:7,
+   catagory: "Newest",
+   img: ['url("https://images.urbndata.com/is/image/Anthropologie/78001815_040_s?fit=constrain&hei=56&qlt=75")',
+        'url("https://images.urbndata.com/is/image/Anthropologie/78001815_066_s?fit=constrain&hei=56&qlt=75")'],
    },
    {image:"https://images.urbndata.com/is/image/Anthropologie/68774272_085_b14?$an-category$&fit=constrain&fmt=webp&hei=1046&qlt=80&wid=698",
    name:"Nicenza Mettalic Mules",
    price:160,
-   size:7
+   size:7,
+   catagory: "Newest",
+   img: ['url("https://images.urbndata.com/is/image/Anthropologie/76183573_010_s?fit=constrain&hei=56&qlt=75")'],
    },
    {image:"https://images.urbndata.com/is/image/Anthropologie/68542190_066_b2?$an-category$&fit=constrain&fmt=webp&hei=1046&qlt=80&wid=698",
    name:"Bibi lou Aoi Heels",
    price:180,
-   size:6
+   size:6,
+   catagory: "Newest",
+   img: ['url("https://images.urbndata.com/is/image/Anthropologie/69266591_001_s?fit=constrain&hei=56&qlt=75")',
+    'url("https://images.urbndata.com/is/image/Anthropologie/69266591_010_s?fit=constrain&hei=56&qlt=75")',
+    'url("https://images.urbndata.com/is/image/Anthropologie/69266591_040_s?fit=constrain&hei=56&qlt=75")',
+    'url("https://images.urbndata.com/is/image/Anthropologie/69266591_070_s?fit=constrain&hei=56&qlt=75")',
+	'url("https://images.urbndata.com/is/image/Anthropologie/69266591_072_s?fit=constrain&hei=56&qlt=75")'],
    },
    {image:"https://images.urbndata.com/is/image/Anthropologie/66043233_055_b2?$an-category$&fit=constrain&fmt=webp&hei=1046&qlt=80&wid=698",
    name:"K-swiss Classic Sneakers",
    price:70,
-   size:5
+   size:5,
+   catagory: "Newest",
+   img: ['url("https://images.urbndata.com/is/image/Anthropologie/78001815_040_s?fit=constrain&hei=56&qlt=75")',
+        'url("https://images.urbndata.com/is/image/Anthropologie/78001815_066_s?fit=constrain&hei=56&qlt=75")'],
    },
    {image:"https://images.urbndata.com/is/image/Anthropologie/67264093_010_b2?$an-category$&fit=constrain&fmt=webp&hei=1046&qlt=80&wid=698",
    name:"Faguo Ceiba Baskets Sneakers",
    price:135,
-   size:5
+   size:5,
+   catagory: "Newest",
+   img: ['url("https://images.urbndata.com/is/image/Anthropologie/61389706_060_s?fit=constrain&hei=56&qlt=75")',
+    'url("https://images.urbndata.com/is/image/Anthropologie/61389706_270_s?fit=constrain&hei=56&qlt=75")'],
    },
    {image:"https://images.urbndata.com/is/image/Anthropologie/66976606_001_b2?$an-category$&fit=constrain&fmt=webp&hei=1046&qlt=80&wid=698",
    name:"Matisse Jelly Slide Sandals",
    price:28,
-   size:6
+   size:6,
+   catagory: "Newest",
+   img: ['url("https://images.urbndata.com/is/image/Anthropologie/78001815_040_s?fit=constrain&hei=56&qlt=75")',
+        'url("https://images.urbndata.com/is/image/Anthropologie/78001815_066_s?fit=constrain&hei=56&qlt=75")'],
    },
    {image:"https://images.urbndata.com/is/image/Anthropologie/67128207_015_b2?$an-category$&fit=constrain&fmt=webp&hei=1046&qlt=80&wid=698",
    name:"Laidback London Daini Sandals",
    price:68,
-   size:6
+   size:6,
+   catagory: "Bestselling",
+   img: ['url("https://images.urbndata.com/is/image/Anthropologie/61389706_060_s?fit=constrain&hei=56&qlt=75")',
+    'url("https://images.urbndata.com/is/image/Anthropologie/61389706_270_s?fit=constrain&hei=56&qlt=75")'],
    },
    {image:"https://images.urbndata.com/is/image/Anthropologie/67665521_015_b2?$an-category$&fit=constrain&fmt=webp&hei=1046&qlt=80&wid=698",
    name:"Woven Platform Tie-up Sandals",
    price:112,
-   size:5
+   size:5,
+   catagory: "Newest",
+   img: ['url("https://images.urbndata.com/is/image/Anthropologie/76183573_010_s?fit=constrain&hei=56&qlt=75")'],
    },
    {image:"https://images.urbndata.com/is/image/Anthropologie/67105452_059_b2?$an-category$&fit=constrain&fmt=webp&hei=1046&qlt=80&wid=698",
    name:"Melissa Possesion Degradde Flats",
    price:48,
-   size:6
+   size:6,
+   catagory: "Newest",
+   img: ['url("https://images.urbndata.com/is/image/Anthropologie/61389706_060_s?fit=constrain&hei=56&qlt=75")',
+    'url("https://images.urbndata.com/is/image/Anthropologie/61389706_270_s?fit=constrain&hei=56&qlt=75")'],
    },
    {image:"https://images.urbndata.com/is/image/Anthropologie/67454595_001_b2?$an-category$&fit=constrain&fmt=webp&hei=1046&qlt=80&wid=698",
    name:"Tie-up Thang Sandals",
    price:77,
-   size:5
+   size:5,
+   catagory: "Bestselling",
+   img: ['url("https://images.urbndata.com/is/image/Anthropologie/61389706_060_s?fit=constrain&hei=56&qlt=75")',
+    'url("https://images.urbndata.com/is/image/Anthropologie/61389706_270_s?fit=constrain&hei=56&qlt=75")'],
    },
    {image:"https://images.urbndata.com/is/image/Anthropologie/67563486_034_b2?$an-category$&fit=constrain&fmt=webp&hei=1046&qlt=80&wid=698",
    name:"Transport Zebra Sandals",
    price:98,
-   size:6
+   size:6,
+   catagory: "Newest",
+   img: ['url("https://images.urbndata.com/is/image/Anthropologie/78001815_040_s?fit=constrain&hei=56&qlt=75")',
+        'url("https://images.urbndata.com/is/image/Anthropologie/78001815_066_s?fit=constrain&hei=56&qlt=75")'],
    }
    ] ;
    let items=JSON.parse(localStorage.getItem("data"))
@@ -411,6 +576,18 @@ else if(select=="az"){
             else return 0
         })
         display(item)
+    }else if(select=="Newest"){
+        output=item.filter(function(el){
+            return(el.catagory=="Newest")
+        })
+        display(output)
+    }else if(select=="Bestselling"){
+        output=item.filter(function(el){
+            return(el.catagory=="Bestselling")
+        })
+        display(output)
+    }else if(select=="Featured"){
+        window.location.reload()
     }
 
     // window.location.reload()
@@ -438,8 +615,25 @@ display1(items)
     pr.innerText=`$ ${el.price}`
     }
     let sz=document.createElement("p")
+    let colr=document.createElement("p")
+     for(let i=0;i<el.img.length;i++){
+        colr.setAttribute("class","coloursForPic")
+        if(i<4){
+        let inp=document.createElement("button")
+        //let a=
+       // console.log(a)
+      
+        inp.style.backgroundImage =el.img[i]
     
-    box.append(im,nam,pr,sz)
+    
+        
+       
+       colr.append(inp)
+        }else
+        colr.append("+"+(el.img.length-4))
+     }    
+    
+    box.append(im,nam,pr,sz,colr)
     document.querySelector("#images").append(box)
 
    })
@@ -470,7 +664,7 @@ display1(items)
 //  }
 function send(el){
     localStorage.setItem("obj", JSON.stringify(el))
-    window.location.href="clothing.html"
+    window.location.href="cartshoe.html"
 }
  document.querySelector("#price").addEventListener("click", pri)
  function pri(){

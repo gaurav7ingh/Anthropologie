@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SALES</title>
+    <a href="clothing.html"></a>
+    <a href="shoes.html"></a>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            font-family:  Arial, Helvetica, sans-serif;
+            box-sizing: border-box;
+        }
+        #complete{
+            /* border: 1px solid red; */
+            width:90%;
+            height:3000px;
+            margin: auto;
+            margin-top: 10px;
+            /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+            
+        }
+        #top{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+        #top>div{
+            /* border:1px solid green; */
+            width:15%;
+            height:60px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           font-size: 14px;
+           font-weight: 10px;
+           box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+        }
+        #shoes{
+            /* border: 1px solid green; */
+            /* margin-left: 300px; */
+            margin-top: 20px;
+            display: flex;
+            
+    
+        }
+        #shoes>div:nth-child(1){
+            /* border: 1px solid blue; */
+            display: flex;
+            width:400px;
+        
+            /* box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; */
+        
+        }
+        #shoes>div:nth-child(1)>p{
+            margin-top: 13px;
+            margin-left: 13px;
+            color: #555;
+            margin-right: 40px;
+
+        }
+        #shoes>div:last-child{
+            display: flex;
+            /* border: 1px solid green; */
+            width:200px;
+            margin-left: 200px;
+            margin-top: 12px;
+        }
+        #sort{
+        
+            width:60%;
+            font-size: 15px;
+            color: rgb(92,92,95);
+            /* margin-left: 20px; */
+            padding: 5px;
+            
+            
+        }
+        #shoes>div:last-child>p{
+            color:black;
+            margin-top: 7px;
+            margin-right: 2px;
+        }
+        #images{
+            /* border: 1px solid green; */
+            /* margin-left: 300px; */
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(5,410px);
+            gap: 15px;
+        }
+        /* #images>div{
+            border:1px solid red;
+        } */
+        #images>div {
+            overflow: hidden;
+        }
+        #images>div>img{
+            width:100%;
+            height:300px;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            transition-duration: 2s;
+        }
+        #images>div>p{
+            margin-top: 10px;
+        }
+        #images>div>p+p{
+            color:#555;
+            margin-top: 5px;
+            font-size: 15px;
+        }
+        #images>div:hover img{
+            transform: scale(1.1);
+        }
+        img+p{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #top>div:nth-child(1){
+            background-color:rgb(20,104,71) ;
+            color:white;
+        }
+        #top>div:nth-child(2){
+            background-color: rgb(69,157,147);
+            color:white;
+        }
+        #top>div:nth-child(3){
+            background-color: rgb(102,135,167);
+            color:white;
+        }
+        #top>div:nth-child(4){
+            background-color:#4f9589;
+            color:white;
+        }
+        #top>div:nth-child(5){
+            background-color:#5d8b52;
+            color:white;
+        }
+        #top>div:nth-child(6){
+            background-color: #6799aa;
+            color:white;
+        }
+        h1{
+        font-family: Arial, Helvetica, sans-serif;
+         font-size: 20px;
+         font-weight: 2px;
+         margin-top: 7px;
+        }
+        #box{
+            /* border: 1px solid yellow; */
+            margin-left: 0px;
+            width:1400px
+            
+        }
+        #upper{
+            /* border:1px solid red; */
+            display: flex;
+            margin-top: 10px;
+            /* position: relative; */
+        }
+        #upper>div:first-child{
+            /* border: 1px solid green; */
+            
+            width: 250px;
+            height: 600px;
+            display: block;
+            margin-top: 29px;
+            margin-right: 40px;
+        }
+        #images>div{
+            position: relative;
+        }
+        a{
+            margin-top: 20px;
+            text-decoration: none;
+            display: block;
+            color: #555;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+        #shoes>div:nth-child(2){
+            /* border: 1px solid red; */
+            width:300px;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        #cloth{
+            margin-top: 0px;
+            width:50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 10px 0 5px;
+        }
+        #sec1{
+         margin-top: 20px;
+         border: 1px solid red;
+         width:100px;
+         padding-right: 20px;
+         
+        }
+        a+h3{
+            margin-top: 20px;
+            
+        }
+        #upper>div:first-child>h2{
+            margin-top: 20px;
+        }
+        #price~h2{
+            font-weight: normal;
+            font-size: 20px;
+        }
+        #price{
+            font-weight: normal;
+            font-size: 20px;
+        }
+        #btn{
+            margin-left: 100px;
+        }
+        #images>div>p>button{
+            height:20px;
+            width:20px;
+            border-radius: 50%;
+            margin-right: 5px;
+           }
+           .coloursForPic{
+            position: absolute;
+            bottom: 0px;
+           }
+           .coloursForPic>button{
+            border:0.5px solid #5555;
+           }
+    @media all and (min-width:784px) and (max-width:1074px){
+        #images{
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(7,420px);
+            /* width:100%; */
+            gap:10px;
+        }
+        #images>div{
+            /* width:100%; */
+            
+        }
+        /* #complete{
+            width: 400px;
+            height: 380px;
+        } */
+        #box{
+            width:100%;
+        }
+        #shoes>div:nth-child(1)>p{
+            margin-left: 4px;
+        }
+        #upper{
+            width:100%;
+        }
+
+    }
+    @media all and (min-width:200px) and (max-width:783px){
+        #images{
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(10,400px);
+            /* width:100%; */
+            gap:10px;
+        }
+        
+        /* #complete{
+            width: 400px;
+            height: 380px;
+        } */
+        #box{
+            width:100%;
+        }
+        #shoes>div:nth-child(1)>p{
+            margin-left: 4px;
+        }
+        #upper>div:first-child{
+            display: none;
+        }
+        /* #upper>div:first-child>h2{
+           margin-top: 0px;
+           height: 0px;
+           display: none;
+        } */
+        #upper{
+     width:100%;
+        }
+    
+    }
+
+    
+    
+    
+    </style>
+</head>
+<body>
+    <div id="complete">
+        <!-- <div id="top">
+            <div>5-5.5</div>
+            <div>6-6.5</div>
+            <div>7-7.5</div>
+            <div>8-8.5</div>
+            <div>9-9.5</div>
+            <div>10-11</div>
+        </div> -->
+    <div id="upper">
+        <div>
+            <h3>Browse by:</h3>
+            <hr>
+            <a href="homepage.html">Home</a>
+            <a href="shoes.html">shoes</a>
+            <a href="clothing.html">clothing</a>
+            <a href="beauty1.html">Beauty and wellness</a>
+            <a href="">Weddings</a>
+            <a href="">Homes and Furniture</a>
+            <a href="">Garden & outdoor</a>
+            <h3>Filter by:</h3>
+            <hr>
+            <h2 id="price">Price +</h2>
+            <hr>
+            <h2 id="size">Size +</h2>
+            <hr>
+            <h2>Color +</h2>
+            <hr>
+            <h2>Brand +</h2>
+            <hr>
+            <h2>Free pickup +</h2>
+            <hr>
+        </div>
+    <div id="box">
+        <div id="shoes">
+            <div>
+                <h1>All sale items</h1>
+                <p>2769 products</p>
+            </div>
+            <div>
+                <p>Sort:</p>
+                <select name="" id="sort">
+                    <option value="Featured">Featured</option>
+                    <option value="lowhigh">Price:Low to High</option>
+                    <option value="highlow">Price:High to Low</option>
+                    <option value="Newest">Newest</option>
+                    <option value="Bestselling">Bestselling</option>
+                    <option value="az">A-Z</option>
+                    <option value="za">Z-A</option>
+                </select>
+                <!-- <button class="btn"><a class="cloth"href=""><</a></button> -->
+                <button id="btn"><a id="cloth" href="clothing.html">4</a></button>
+            </div>
+        </div>
+        <div id="images">
+
+        </div>
+    </div>
+    </div>
+    </div>
+</body>
+</html>
+<script>
+let item=[
+    {
+    image: "https://images.urbndata.com/is/image/Anthropologie/4130464030175_009_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=960",
+    name: "Hutch Ditsy Floral Corset Mini Dress",
+    price: "99.95",
+    productID: "sale1",
+    catagory: "Home",
+    img: ['url("https://www.google.com/search?q=rgb(0+0+0)&client=firefox-b-d&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiH__b7sq_4AhWHR2wGHdZCBIsQ_AUoAXoECAEQAw&biw=1536&bih=731&dpr=1.25#imgrc=TY8jtpDD0kEtuM")',
+		'url("https://www.google.com/search?q=rgb(255+0+0)&client=firefox-b-d&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjj04Ogs6_4AhW0UGwGHQ--AmoQ_AUoAXoECAEQAw&biw=1536&bih=731&dpr=1.25#imgrc=i83BEOYQFny7sM")'],
+  },
+	{
+    image: "https://images.urbndata.com/is/image/Anthropologie/4130089450007_069_b14?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=960",
+    name: "Pilcro Flutter Sleeve Midi Dress",
+    price: "99.95",
+    productID: "sale2",
+    catagory: "Home",
+    img: ['url("https://www.google.com/search?q=rgb(255+0+0)&client=firefox-b-d&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjj04Ogs6_4AhW0UGwGHQ--AmoQ_AUoAXoECAEQAw&biw=1536&bih=731&dpr=1.25#imgrc=i83BEOYQFny7sM")',
+		'url("https://images.urbndata.com/is/image/Anthropologie/4130089450007_010_s?fit=constrain&hei=56&qlt=75")',
+		'url("https://images.urbndata.com/is/image/Anthropologie/4130089450007_030_s?fit=constrain&hei=56&qlt=75")'],
+  },
+	{
+    image: "https://images.urbndata.com/is/image/Anthropologie/4112346380020_029_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=960",
+    name: "Pilcro Sustainable Swing Tee",
+    price: "39.95",
+    productID: "sale3",
+    catagory: "Home",
+    img: ['url("https://images.urbndata.com/is/image/Anthropologie/4112346380020_029_s?fit=constrain&hei=56&qlt=75")',
+		'url("https://images.urbndata.com/is/image/Anthropologie/4112346380020_069_s?fit=constrain&hei=56&qlt=75")',
+		'url("https://images.urbndata.com/is/image/Anthropologie/4112346380020_084_s?fit=constrain&hei=56&qlt=75")'],
+  },
+	{
+   image: "https://images.urbndata.com/is/image/Anthropologie/4112919040013_066_b4?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=960",
+    name: "Maeve Cropped Striped Tank",
+    price: "29.95",
+    productID: "sale4",
+    catagory: "Home",
+    img: ['url("https://images.urbndata.com/is/image/Anthropologie/4112527770080_080_s?fit=constrain&hei=56&qlt=75")',
+		'url("https://images.urbndata.com/is/image/Anthropologie/4112527770080_041_s?fit=constrain&hei=56&qlt=75")',
+		'url("https://images.urbndata.com/is/image/Anthropologie/4112527770080_063_s?fit=constrain&hei=56&qlt=75")'],
+  },
+	{
+   image: "https://images.urbndata.com/is/image/Anthropologie/4110916210106_049_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=960",
+    name: "Longline Buttondown",
+    price: "59.95",
+    productID: "sale6",
+    catagory: "Home",
+    img: ['url("https://images.urbndata.com/is/image/Anthropologie/4110907290006_011_s?fit=constrain&hei=56&qlt=75")',
+		'url("https://images.urbndata.com/is/image/Anthropologie/4110907290006_014_s?fit=constrain&hei=56&qlt=75")',
+		'url("https://images.urbndata.com/is/image/Anthropologie/4110907290006_050_s?fit=constrain&hei=56&qlt=75")',
+		'url("https://images.urbndata.com/is/image/Anthropologie/4110907290006_060_s?fit=constrain&hei=56&qlt=75")',
+		'url("https://images.urbndata.com/is/image/Anthropologie/4110907290006_066_s?fit=constrain&hei=56&qlt=75")'],
+  },
+	{
+    image: "https://images.urbndata.com/is/image/Anthropologie/4112264070042_010_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=960",
+    name: "Pleated Ruffle Halter Top",
+    price: "49.95",
+    productID: "sale7",
+    catagory: "Home",
+    img: ['url("https://images.urbndata.com/is/image/Anthropologie/4112264070042_010_s?fit=constrain&hei=56&qlt=75")',
+		'url("https://images.urbndata.com/is/image/Anthropologie/4112264070042_059_s?fit=constrain&hei=56&qlt=75")'],
+  },
+	{
+    image: "https://images.urbndata.com/is/image/Anthropologie/4122831920099_092_b14?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=960",
+    name: "Pilcro Sustainable Slim Boyfriend Jeans",
+    price: "79.95",
+    productID: "sale8",
+    catagory: "Home",
+    img: ['url("https://images.urbndata.com/is/image/Anthropologie/4122831920099_092_s?fit=constrain&hei=56&qlt=75")'],
+  },
+	{
+    image: "https://images.urbndata.com/is/image/Anthropologie/4130916210057_011_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=960",
+    name: "Soft Printed Mini Dress",
+    price: "99.95",
+    productID: "sale9",
+    catagory: "Home",
+    img: ['url("https://images.urbndata.com/is/image/Anthropologie/4130916210057_011_s?fit=constrain&hei=56&qlt=75")',
+		'url("https://images.urbndata.com/is/image/Anthropologie/4130916210057_266_s?fit=constrain&hei=56&qlt=75")'],
+  },
+	{
+    image: "https://images.urbndata.com/is/image/Anthropologie/57503047_913_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=960",
+    name: "Dagny Monogram Mug",
+    price: "7.95",
+    productID: "sale10",
+    catagory: "Home",
+    img: ['url("data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwoQDw8KEBAQDQgIDQ0ICAgKDxsICQgKFREWFhURExMYHSggGBolGxMTITEhJSkrLi4vIx8zODMsNygtRisBCgoKDQ0OGQ8PETchHyUrLSsrKzM3LTcrLSs3NTQ3OCsyMi4rLTcrLDEvKzgtODcyKy0rKzItLSstKysrKysrLf/AABEIAMMBAwMBIgACEQEDEQH/xAAbAAEAAwEBAQEAAAAAAAAAAAAAAgQFAQMGB//EADAQAQABAQUHBAICAQUAAAAAAAABAgMEFTFRBREhMkGRsRIicXJhgVKh8DNCYoKS/8QAGgEBAQEAAwEAAAAAAAAAAAAAAAECAwUGBP/EAB8RAQEAAgIBBQAAAAAAAAAAAAABAhEDBFEFBhMhIv/aAAwDAQACEQMRAD8A/XiP83C5YWMRxnmn+nHJtXlZ3aZ4zwjSM1imxojp+54vQbk0gAoAAAAAAAAAAAAAAAAAAAA86rKiekfPVXtbru4xx/E5rglgy5j+syIXL1Zb49Uc9PHd/KFGi0pqyzjONJYs0qF75KvhjtyunfExrwZlVztN/COGryvuDq8vJyYZ4YbmtfT7OtnjJZa8IdXqLlwjXqOvx9G7Vk/Lk+fDy1LrZ759X8eELjyu9O6mPzxer3sdcAKAAAAAAAAAAAAAAAAAAAAAAAADB2xZzZVxbU/6drvi0jpFTeUtr2Xqsa460x66fmOKUVbtbRXG/rGcPVh3C3mmqI/21ZtyOPHpPFhQddNC9RlHxCSNGUfEJORAAAAAAAAAAAAAAAAAAAAAAAAAAB528e2qNaavD0QteWr61eAfFx4b9wr9VEa5SwWxsifbLCr4OguUZR8JI0ZR8JNoAAAAAAAAAAAAAAAAAAAAAAAAAAIWvLV9avCaFry1fWrwD4xsbI5ZZO5sbH5ZZVe3Ou7nEFynKP065Tk62gAAAAAAAAAAAAAAAAAAAAAAAAAAha8tX1q8JoWvLV9avAPj2vsfllkS2Nj8ssi+4kCrVOTrlOTrSAAAAAAAAAAAAAAAAAAAAAAAAAACFry1fWrwmha8tX1q8A+Q3NjY/LLImGxsfllkaG4AFiHXIdaAAAAAAAAAAAAAAAAAAAAAAAAAABC15avrPhNC15avrPgHyUtjY8e2WQ2Nj8soL+4ddQesOkDQAAAAAAAAAAAAAAAAAAAAAAAAAAIWvLV9Z8JoWvLV9Z8A+TbOxuWWQ2Njx7ZQX3QB6wAoAAAAAAAAAAAAAAAAAAAAAAAAAAIWvLV9Z8JoWvLV9Z8A+V3NnY/LLHbOx+WUGhuHQEgFAAAAAAAAAAAAAAAAAAAAAAAAAAB43uuIorn/AIzH7ezM2zeN0RZRzVe+r8UwDHbOxo9ksZu7Jp3UfILg66AAAIzVEZ8PDsSDoAAAAAAAAAAAAAAAAAAAAAA5Mqd62jZ0cI99fSmMo+ZB73m8U0U+qf8ArT1ql87bWlVdU1znVnGkaJXi3rrn1VTx6R0peUR065QCdlRNVUU6vo7vZ+mmKdM1DZd03e+f1DUAAAAByqmJjdOUs68Xa1p91nVMRn6Yng0gGFVf71TwmctaYRxO8fyjtDatLCirOFavZllP4BnYneNY7QYneNY7QvYVRqYVRqCjid41jtBid41jtC9hVGphVGoKOJ3jWO0GJ3jWO0L2FUamFUago4neNY7QYneNY7QvYVRqYVRqCjid41jtBid41jtC9hVGphVGoKOJ3jWO0GJ3jWO0L2FUamFUago4neNY7QYneNY7QvYVRqYVRqCjid41jtBid41jtC9hVGphVGoKOJ3jWO0GJ3jWO0L2FUamFUago4neNY7QTtK8/wAo/wDML2FUamFUagyrS82tXNVMxpv3Q8m1hVGqdGzbKPyDFos6p4RDUuWzt3uq/UNCzsaKcoegOREZdIdAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH//Z")'],
+  },
+	{
+    image: "https://images.urbndata.com/is/image/Anthropologie/65739427_055_b11?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=960",
+    name: "Tallulah Tumbler",
+    price: "9.95",
+    productID: "sale11",
+    catagory: "Home",
+    img: ['url("https://images.urbndata.com/is/image/Anthropologie/65739427_055_s?fit=constrain&hei=56&qlt=75")',
+		'url("https://images.urbndata.com/is/image/Anthropologie/65739427_066_s?fit=constrain&hei=56&qlt=75")',
+		'url("https://images.urbndata.com/is/image/Anthropologie/65739427_099_s?fit=constrain&hei=56&qlt=75")'],
+  },
+	{
+    image: "https://images.urbndata.com/is/image/Anthropologie/68587781_011_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=960",
+    name: "Kaveri Gauze Short",
+    price: "48.00",
+    productID: "sale12",
+    catagory: "Newest",
+    img: ['url("https://images.urbndata.com/is/image/Anthropologie/68587781_011_s?fit=constrain&hei=56&qlt=75")',
+		'url("https://images.urbndata.com/is/image/Anthropologie/68587781_060_s?fit=constrain&hei=56&qlt=75")'],
+  },
+	{
+    image: "https://images.urbndata.com/is/image/Anthropologie/4113086690011_017_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=960",
+    name: "Maeve Carys Mock Neck Sweater",
+    price: "59.00",
+    productID: "sale13",
+    catagory: "Newest",
+    img: ['url("https://images.urbndata.com/is/image/Anthropologie/4113086690011_017_s?fit=constrain&hei=56&qlt=75")',
+		'url("https://images.urbndata.com/is/image/Anthropologie/4113086690011_038_s?fit=constrain&hei=56&qlt=75")',
+		'url("https://images.urbndata.com/is/image/Anthropologie/4113086690011_033_s?fit=constrain&hei=56&qlt=75")'],
+  },
+	{
+    image: "https://images.urbndata.com/is/image/Anthropologie/47481502_048_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=960",
+    name: "Maeve Carys Mock Neck Sweater",
+    price: "289.00",
+    productID: "sale14",
+    catagory: "Newest",
+    
+    img: ['url("https://images.urbndata.com/is/image/Anthropologie/4110347800056_041_s?fit=constrain&hei=56&qlt=75")'],
+  },
+	{
+    image: "https://images.urbndata.com/is/image/Anthropologie/4110347800056_041_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=960",
+    name: "Miranda Peasant Blouse",
+    price: "79.95",
+    productID: "sale15",
+    catagory: "Newest",
+    img: ['url("https://images.urbndata.com/is/image/Anthropologie/4110347800056_041_s?fit=constrain&hei=56&qlt=75")'],
+  },
+	{
+    image: "https://images.urbndata.com/is/image/Anthropologie/64309925_052_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=960",
+    name: "Jenny Printed Seamless T-Back Bralette",
+    price: "19.95",
+    productID: "sale16",
+    catagory: "Newest",
+    img: ['url("https://images.urbndata.com/is/image/Anthropologie/64309925_052_s?fit=constrain&hei=56&qlt=75")',
+		'url("https://images.urbndata.com/is/image/Anthropologie/64309925_024_s?fit=constrain&hei=56&qlt=75")',
+		'url("https://images.urbndata.com/is/image/Anthropologie/64309925_270_s?fit=constrain&hei=56&qlt=75")'],
+  },
+	{
+    image: "https://images.urbndata.com/is/image/Anthropologie/56053929_049_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=960",
+    name: "Fruit & Veggie Food Huggers, Set of 5",
+    price: "6.95",
+    productID: "sale17",
+    catagory: "Bestselling",
+    img: ['url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQG4O6vYgVBpepHbuj53pxGL444oE0DWfZR4-spvZY6Q9NVfrKznjIwOi-4XGVk8F4kBBA&usqp=CAU")']
+  },
+	{
+    image: "https://images.urbndata.com/is/image/Anthropologie/66430166_025_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=960",
+    name: "Maeve Puffy Knotted Sandals",
+    price: "59.95",
+    productID: "sale18",
+    catagory: "Bestselling",
+    img: ['url("https://images.urbndata.com/is/image/Anthropologie/66430166_025_s?fit=constrain&hei=56&qlt=75")',
+		'url("https://images.urbndata.com/is/image/Anthropologie/66430166_041_s?fit=constrain&hei=56&qlt=75")',
+		'url(https://images.urbndata.com/is/image/Anthropologie/66430166_066_s?fit=constrain&hei=56&qlt=75")']
+  },
+	{
+    image: "https://images.urbndata.com/is/image/Anthropologie/64828312_025_b10?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=960",
+    name: "Ferris Stemless Glass",
+    price: "7.95",
+    productID: "sale19",
+    catagory: "Bestselling",
+    img: ['url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAADICAMAAAA9W+hXAAAAA1BMVEXOq11kYs77AAAANElEQVR4nO3BMQEAAADCoPVP7WsIoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAeAN1+AABVhDU2QAAAABJRU5ErkJggg==")',
+		'url("https://images.urbndata.com/is/image/Anthropologie/64828312_097_s?fit=constrain&hei=56&qlt=75")']
+  },
+	{
+    image: "https://images.urbndata.com/is/image/Anthropologie/4130605590012_060_b14?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=960",
+    name: "Off-The-Shoulder Poplin Midi Dress",
+    price: "129.95",
+    productID: "sale20",
+    catagory: "Bestselling",
+    img: ['url("https://images.urbndata.com/is/image/Anthropologie/4130605590012_060_s?fit=constrain&hei=56&qlt=75")']
+  }
+];
+
+   let items=JSON.parse(localStorage.getItem("data"))||[]
+
+ document.querySelector("#sort").addEventListener("change", on1)
+ function on1(){
+    let select=document.querySelector("#sort").value
+    
+
+    if(select=="lowhigh"){
+        item.sort(function(a,b){
+        
+            return a.price-b.price
+        })
+        display(item);
+    }else if(select=="highlow"){
+        item.sort(function(a,b){
+            return b.price-a.price
+        })
+        display(item);
+    }
+else if(select=="az"){
+        item.sort(function(a,b){
+    if(a.name>b.name) return 1
+    if(a.name<b.name) return -1
+    else return 0
+         })
+         display(item);
+        }else if(select=="za"){
+        item.sort(function(a,b){
+    if(a.name<b.name) return 1
+    if(a.name>b.name) return -1
+    else return 0
+         })
+         display(item)
+    }else if(select=="shl"){
+        item.sort(function(a,b){
+            if(a.size<b.size) return 1
+            if(a.size>b.size) return -1
+            else return 0
+        })
+        display(item)
+    }else if(select=="slh"){
+        item.sort(function(a,b){
+            if(a.size>b.size) return 1
+            if(a.size<b.size) return -1
+            else return 0
+        })
+        display(item)
+    }else if(select=="Newest"){
+        output=item.filter(function(el){
+            return(el.catagory=="Newest")
+        })
+        display(output)
+    }else if(select=="Bestselling"){
+        output=item.filter(function(el){
+            return(el.catagory=="Bestselling")
+        })
+        display(output)
+    }else if(select=="Featured"){
+        window.location.reload()
+    }
+
+    // window.location.reload()
+
+}
+display1(items)
+ display(item)
+
+ 
+ function display(item){
+   document.querySelector("#images").innerHTML=""
+   item.forEach(function(el){
+    let box=document.createElement("div")
+    box.addEventListener("click", function(){
+        send(el)
+    })
+    let im=document.createElement("img")
+    im.setAttribute("src",el.image)
+    let nam=document.createElement("p")
+    nam.innerText=el.name
+    // if(item.price==""){
+    let pr=document.createElement("p")
+    if(el.price!=""){
+    pr.innerText=`$ ${el.price}`
+    }
+    // let sz=document.createElement("p")
+    let colr=document.createElement("p")
+     for(let i=0;i<el.img.length;i++){
+        colr.setAttribute("class","coloursForPic")
+        if(i<4){
+        let inp=document.createElement("button")
+        //let a=
+       // console.log(a)
+      
+        inp.style.backgroundImage =el.img[i]
+    
+    
+        
+       
+       colr.append(inp)
+        }else
+        colr.append("+"+(el.img.length-4))
+     }    
+    
+    box.append(im,nam,pr,colr)
+    document.querySelector("#images").append(box)
+
+   })
+   localStorage.setItem("data", JSON.stringify(item))
+ }
+ function display1(items){
+
+   items.forEach(function(el){
+    let box=document.createElement("div")
+    let im=document.createElement("img")
+    im.setAttribute("src",el.image)
+    let nam=document.createElement("p")
+    nam.innerText=el.name
+    let pr=document.createElement("p")
+    pr.innerText=`$ ${el.price}`
+    // let sz=document.createElement("p")
+    // sz.innerText=el.size
+    box.append(im,nam,pr)
+    document.querySelector("#images").append(box)
+
+   })
+   localStorage.setItem("data",JSON.stringify(item))
+ }
+//  document.querySelector("#btn").addEventListener("click", on2)
+//  function on2(){
+   
+//  }
+function send(el){
+    localStorage.setItem("obj", JSON.stringify(el))
+    window.location.href="cartshoe.html"
+}
+document.querySelector("#price").addEventListener("click", pri)
+ function pri(){
+    item.sort(function(a,b){
+        return a.price-b.price
+    })
+    display(item)
+ }
+ document.querySelector("#size").addEventListener("click", siz)
+ function siz(){
+    item.sort(function(a,b){
+        return a.size-b.size
+    })
+    display(item)
+ }
+ 
+</script>
