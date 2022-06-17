@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anthropologie | Women's Clothing</title>
+    <link rel="stylesheet" href="footer.css">
+</head>
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+
+
+    #main1{
+        width: 90%;
+        /* border: 1px solid blue; */
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat((4,500px));
+        gap: 40px 20px;
+        grid-template-areas: 
+        "a a b"
+        "a a b"
+        "a a b"
+        "c c c";
+    }
+
+
+    #one{
+        /* border: 1px solid teal; */
+        grid-area: a;
+        order: 10;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(3,1fr);
+        gap: 40px 20px;
+        grid-template-areas: 
+        "A A"
+        "B C"
+        "D D";
+    }
+    #one>div:nth-child(1){
+        /* border: 1px solid orange; */
+        grid-area: A;
+        position:sticky;
+    }
+    #one>div:nth-child(1)>button{
+        text-align: center;
+        position: absolute;
+        top: 88%;
+        left: 40%;
+        width: 20%;
+        height: 7%;
+        background-color:white;
+        border: transparent;
+    }
+    a:hover{
+        text-decoration: underline;
+    }
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    #one>div:nth-child(2){
+        /* border: 1px solid orange; */
+        grid-area: B;
+        position: sticky;
+    }
+    #one>div:nth-child(2)>button{
+        text-align: center;
+        position: absolute;
+        top: 88%;
+        left: 33%;
+        width: 35%;
+        height: 7%;
+        background-color:white;
+        border: transparent;
+    }
+    #one>div:nth-child(3){
+        /* border: 1px solid orange; */
+        grid-area: C;
+        position: sticky;
+    }
+    #one>div:nth-child(3)>button{
+        text-align: center;
+        position: absolute;
+        top: 88%;
+        left: 25%;
+        width: 50%;
+        height: 7%;
+        background-color:white;
+        border: transparent;
+    }
+    #one>div:nth-child(4){
+        /* border: 1px solid orange; */
+        grid-area: D;
+        position: sticky;
+    }
+    #one>div:nth-child(4)>button:nth-child(2){
+        text-align: center;
+        position: absolute;
+        top: 88%;
+        left: 8%;
+        width: 45%;
+        height: 7%;
+        background-color:white;
+        border: transparent;
+    }
+    #one>div:nth-child(4)>button:nth-child(3){
+        text-align: center;
+        position:absolute;
+        top: 88%;
+        left: 56%;
+        width: 37%;
+        height: 7%;
+        background-color:white;
+        border: transparent;
+    }
+    #one img{
+        width: 100%;
+        height: 100%;
+    }
+
+
+    #two{
+        /* border: 1px solid red; */
+        grid-area: b;
+        order: 9;
+        display: grid;
+        grid-template-rows: repeat(1,1fr);
+        grid-template-rows: repeat(4,1fr);
+        gap: 40px 0px;
+        grid-template-areas: 
+        "E"
+        "F"
+        "G"
+        "H";
+    }
+    #two>div:nth-child(1){
+        /* border: 1px solid green; */
+        grid-area: E;
+        position: sticky;
+    }
+    #two>div:nth-child(1)>button{
+        text-align: center;
+        position: absolute;
+        top: 84%;
+        left: 29%;
+        width: 42%;
+        height: 10%;
+        background-color:white;
+        border: transparent;
+    }
+    #two>div:nth-child(2){
+        /* border: 1px solid green; */
+        grid-area: F;
+        position: sticky;
+    }
+    #two>div:nth-child(2)>button{
+        text-align: center;
+        position: absolute;
+        top: 84%;
+        left: 34%;
+        width: 30%;
+        height: 10%;
+        background-color:white;
+        border: transparent;
+    }
+    #two>div:nth-child(3){
+        /* border: 1px solid green; */
+        grid-area: G;
+        position: sticky;
+    }
+    #two>div:nth-child(3)>button{
+        text-align: center;
+        position: absolute;
+        top: 84%;
+        left: 29%;
+        width: 35%;
+        height: 10%;
+        background-color:white;
+        border: transparent;
+    }
+    #two>div:nth-child(4){
+        /* border: 1px solid green; */
+        grid-area: H;
+        position: sticky;
+    }
+    #two>div:nth-child(4)>button{
+        text-align: center;
+        position: absolute;
+        top: 84%;
+        left: 29%;
+        width: 38%;
+        height: 10%;
+        background-color:white;
+        border: transparent;
+    }
+    #two img{
+        width: 100%;
+        height: 100%;
+    }
+
+
+    #three{
+        /* border: 1px solid black; */
+        grid-area: c;
+        order: 8;
+        display: grid;
+        grid-template-rows: repeat(2,1fr);
+        grid-template-rows: repeat(1,1fr);
+        gap: 0px 20px;
+        grid-template-areas:
+        "I J";
+    }
+    #three>div:nth-child(1){
+        /* border: 1px solid green; */
+        grid-area: I;
+        position: sticky;
+    }
+    #three>div:nth-child(1)>button{
+        text-align: center;
+        position: absolute;
+        top: 87%;
+        left: 38%;
+        width: 23%;
+        height: 8%;
+        background-color:white;
+        border: transparent;
+    }
+    #three>div:nth-child(2){
+        /* border: 1px solid green; */
+        grid-area: J;
+        position: sticky;
+    }
+    #three>div:nth-child(2)>button{
+        text-align: center;
+        position: absolute;
+        top: 86%;
+        left: 28%;
+        width: 45%;
+        height: 8%;
+        background-color:white;
+        border: transparent;
+    }
+    #three img{
+        width: 100%;
+        height: 100%;
+    }
+
+
+/* sliding images */
+
+.home_product {
+    width: 90%;
+    margin: auto;
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.home_product-category {
+    padding-top: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+#home_hr{
+    border:0.5px solid rgb(235, 232, 232);
+}
+
+.home_product-container {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.home_product-container::-webkit-scrollbar {
+  display: none;
+}
+
+.home_product-card {
+/* display: flex; */
+  flex: 0 0 auto;
+  width: 210px;
+  height:370px;
+  margin-top: 20px;
+  margin-right: 20px;
+  /* border: 1px solid rebeccapurple; */
+}
+
+.home_product-image {
+  position: relative;
+  width: 100%;
+  height: 330px;
+  overflow: hidden;
+}
+
+.home_product-thumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#home_p{
+    font-size: 14px;
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#home_p:hover{
+    color:rgb(16, 140, 212) ;
+}
+
+.card-btn {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  border: none;
+  outline: none;
+  color: black;
+  height: 50px;
+  transition: 0.5s;
+  cursor: pointer;
+  opacity:0;
+}
+
+.home_product-card:hover .card-btn {
+  opacity: 0.4;
+}
+
+.card-btn:hover{
+  color: rgb(0, 162, 255);
+  opacity: 0.5;
+}
+
+.pre-btn,
+.nxt-btn {
+  border: none;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 10;
+  cursor: pointer;
+  z-index: 8;
+}
+
+.pre-btn {
+    top: 50%;
+  left: 10;
+}
+
+.nxt-btn {
+    top: 55%;
+  right: 20px;
+  transform:rotate(180deg);
+}
+
+.pre-btn img,
+.nxt-btn img {
+    width: 25px;
+}
+
+/* more to explore */
+
+#home_explore{
+     width: 90%;
+     margin: auto;
+     margin-top: 30px;
+     /* border: 1px solid orangered; */
+     height: 500px;
+     display: grid;
+     grid-template-columns: repeat(3,1fr);
+     grid-template-rows: (1,auto);
+     gap: 0px 20px;
+}
+/* #home_explore>div{
+    border: 1px solid greenyellow;
+} */
+#home_explore_p{
+    text-align: center;
+    font-size: 23px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-weight: lighter;
+}
+#home_explore>div>img{
+    width: 100%;
+    height: 70%;
+}
+#home_explore>div>h2{
+    margin-top:15px ;
+    font-weight: 100;
+    color: rgb(100, 98, 97);
+}
+#home_explore_hr{
+    border:0.5px solid rgb(235, 232, 232);
+    width: 90%;
+    margin: auto;
+}
+#home_explore>div>p{
+    margin-top: 15px;
+    line-height:20px;
+    font-weight: 100;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(87, 87, 87);
+}
+#home_explore>div>h2>span{
+    text-decoration: underline;
+}
+
+
+
+/* about us */
+#home_au_hr{
+    border:0.5px solid rgb(235, 232, 232);
+    width: 90%;
+    margin: auto;
+    margin-top: 70px;
+}
+#home_au{
+    width: 90%;
+    height: 100px;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 40px;
+    /* border: 1px solid blue; */
+}
+#home_au>h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+    margin-bottom: 15px;
+}
+#home_au>p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14.5px;
+    line-height: 20px;
+}
+</style>
+
+
+<body>
+
+    <!-- main grid section -->
+    <div id="main1">
+        <div id="one">
+            <div>
+                <img src="https://images.ctfassets.net/5de70he6op10/vU02u4Ed7W7ZkS5Xs4A9F/8bb4ad56dbd9d0cd603893fd9084015b/M1.jpg?w=1756&q=80&fm=webp" alt="">
+                <button><a href="">see what's new</a></button>
+            
+            </div>
+            <div>
+                <img src="https://images.ctfassets.net/5de70he6op10/20iWBHgTWyA4wFUWPuuca/bee8324e9d2b276ba857c43a01bcb8fe/2UP_Dresses.jpg?w=856&q=80&fm=webp" alt="">
+                <button><a href="">shop dresses</a></button>
+            </div>
+            <div>
+                <img src="https://images.ctfassets.net/5de70he6op10/5KFDrC8FPVViNsVHIErMLE/7536376a0f27b7e56b0a784116135db2/2UP_Getaway.jpg?w=856&q=80&fm=webp" alt="">
+                <button><a href="">visit the getaway shop</a></button>
+            </div>
+            <div>
+                <img src="https://images.ctfassets.net/5de70he6op10/2QGun4PWRx9cuojWlBQtnW/ce87d8a7fe49937b947fb66185e94dd5/3rd-Row-Home_-Shop-the-Assortment-_-Explore-the-LP.jpg?w=1756&q=80&fm=webp" alt="">
+                <button><a href="">the new collection: party-ready & ready to ship</a></button>
+                <button><a href="">explore the Heart & Solstice collection</a></button>
+            </div>
+        </div>
+        <div id="two">
+            <div>
+                <img src="https://images.ctfassets.net/5de70he6op10/6uF9NABF6uJ7dX5OzlTkP1/5caaf9530fa67b857ba73b247b4f182d/RR_Accessories.jpg?w=856&q=80&fm=webp" alt="">
+                <button><a href="">shop accessories</a></button>
+            </div>
+            <div>
+                <img src="https://images.ctfassets.net/5de70he6op10/vNy6x3k0aKYsy4AuErZOp/15cb8a7cc642f6530af5dfdcc54a39f0/RR_Tops.jpg?w=856&q=80&fm=webp" alt="">
+                <button><a href="">shop tops</a></button>
+            </div>
+            <div>
+                <img src="https://images.ctfassets.net/5de70he6op10/7jPtxFsyU2ZHnQnEMa223v/36cd69a86c3d89e4f0d7ac2ecd2bc76d/RR_Candle.jpg?w=856&q=80&fm=webp" alt="">
+                <button><a href="">shop candles</a></button>
+            </div>
+            <div>
+                <img src="https://images.ctfassets.net/5de70he6op10/2SsAA9JIKXIjiWgb6o9hew/171d25ebc3c4aaac96c9453b7ca4395b/RR_Furniture.jpg?w=856&q=80&fm=webp" alt="">
+                <button><a href="">shop furniture</a></button>
+            </div>
+        </div>
+        <div id="three">
+            <div>
+                <img src="https://images.ctfassets.net/5de70he6op10/5sDk11qKleSdvIOvZc35OD/3eee309aaddeabaa38696b5c92e526a2/4th-Row-2UP_Shop-All.jpg?w=1301&q=80&fm=webp" alt="">
+                <button><a href="">shop the look</a></button>
+            </div>
+            <div>
+                <img src="https://images.ctfassets.net/5de70he6op10/6zS5hd8iXJvVo6XdWajuVz/e1938a3f0f4a368c3a42cefe3ae7f37b/4th-Row-2UP_New-Apparel-_-Accessories.jpg?w=1301&q=80&fm=webp" alt="">
+                <button><a href="">shop new clothing & accessories</a></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- sliding -->
+    <section class="home_product"> 
+        <h2 class="home_product-category">You May Also Like</h2>
+        <hr id="home_hr">
+        <button class="pre-btn"><img src="https://i.pinimg.com/474x/58/73/c3/5873c3262ab1650c1425fb4f9b458216.jpg" alt=""></button>
+        <button class="nxt-btn"><img src="https://i.pinimg.com/474x/58/73/c3/5873c3262ab1650c1425fb4f9b458216.jpg" alt=""></button>
+        <div class="home_product-container">
+            <div class="home_product-card">
+                <div class="home_product-image">
+                    <img src="https://images.urbndata.com/is/image/Anthropologie/63711766_000_b?$an-category$&qlt=80&fit=constrain" class="home_product-thumb" alt="err">
+                    <button class="card-btn">Quickshop</button>
+                </div>
+                <p id="home_p">Bundled Up Monogram Mug</p>
+                <!-- g&c -->
+            </div>
+            <div class="home_product-card">
+                <div class="home_product-image">
+                    <img src="https://images.urbndata.com/is/image/Anthropologie/65792566_046_b2?$an-category$&qlt=80&fit=constrain" class="home_product-thumb" alt="err">
+                    <button class="card-btn">Quickshop</button>
+                </div>
+                <p id="home_p">Bamboo Melamine Hibiscus Bowl</p> 
+                <!-- h&f -->
+            </div>
+            <div class="home_product-card">
+                <div class="home_product-image">
+                    <img src="https://images.urbndata.com/is/image/Anthropologie/44839058_066_b2?$an-category$&qlt=80&fit=constrain" alt="err">
+                    <button class="card-btn">Quickshop</button>
+                </div>
+                <p id="home_p">Artemis Knob</p>
+
+            </div>
+            <div class="home_product-card">
+                <div class="home_product-image">
+                    <img src="https://images.urbndata.com/is/image/Anthropologie/65534950_237_b?$an-category$&fit=constrain&fmt=webp&hei=1046&qlt=80&wid=698" class="home_product-thumb" alt="err">
+                    <button class="card-btn">Quickshop</button>
+                </div>
+                <p id="home_p">Sculpture Garden Candle</p>
+                <!-- hf -->
+            </div>
+            <div class="home_product-card">
+                <div class="home_product-image">
+                    <img src="https://images.urbndata.com/is/image/Anthropologie/54312020_027_b?$an-category$&qlt=80&fit=constrain" alt="err">
+                    <button class="card-btn">Quickshop</button>
+                </div>
+                <p id="home_p">Bravo Knobs, Set of 2</p>
+                <!-- hf -->
+            </div>
+            <div class="home_product-card">
+                <div class="home_product-image">
+                    <img src="https://images.urbndata.com/is/image/Anthropologie/65701864_066_b2?$an-category$&qlt=80&fit=constrain" class="home_product-thumb" alt="err">
+                    <button class="card-btn">Quickshop</button>
+                </div>
+                <p id="home_p">Cleo Chip & Dip Platter</p>
+                <!-- hf -->
+            </div>
+            <div class="home_product-card">
+                <div class="home_product-image">
+                    <img src="https://images.urbndata.com/is/image/Anthropologie/4112368730048_010_b2?$an-category$&qlt=80&fit=constrain" alt="err">
+                    <button class="card-btn">Quickshop</button>
+                </div>
+                <p id="home_p">By Anthropologie Woven Ruffle Top</p>
+            </div>
+            <div class="home_product-card">
+                <div class="home_product-image">
+                    <img src="https://images.urbndata.com/is/image/Anthropologie/39386255_070_b10?$an-category$&qlt=80&fit=constrain" alt="err">
+                    <button class="card-btn">Quickshop</button>
+                </div>
+                <p id="home_p">Anatomy of a Fragrance Eau De Parfum</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- more to explore section -->
+    <p id="home_explore_p">More to Explore</p>
+    <hr id="home_explore_hr">
+    <div id="home_explore"> 
+        <div>
+            <img src="https://images.ctfassets.net/5de70he6op10/1r51KDuu57NhmJVlQttYSg/0b56eef0118a20584b7bd4bb6f6f1422/MTE_MorrisHome.jpg?w=856&q=80&fm=webp" alt="err">
+            <h2>Honoring Pride with RHD's Morris Home</h2>
+            <p>We're proud to continue to enrich the life-changing work of our neighbors and friends for LGBTQIA+ equality.</p>
+        </div>
+        <div>
+            <img src="https://images.ctfassets.net/5de70he6op10/4UpfYZpqc3pTC4su4dyPz1/662b8b3d50f797464f20d558fec11497/MTE_Donate.jpg?w=856&q=80&fm=webp" alt="err">
+            <h2>Join Us In Donating</h2>
+            <p>We've pledged a financial donation to help support Morris Home – and we hope you will, too.</p>
+        </div>
+        <div>
+            <img src="https://images.ctfassets.net/5de70he6op10/5z1SzJjtkNuitP2HKuc7Ww/4f0f76621a8587e50d4b9e96a30edf36/041122_HPG_MTE_GreaterGood.jpg?w=856&q=80&fm=webp" alt="err">
+            <h2><span>A </span>Greater Good</h2>
+            <p>Our priority: to be a force for good, a greater good, in better service of our planet, its people, and our products.</p>
+        </div>
+    </div>
+
+    <!-- about us section -->
+    <hr id="home_au_hr">
+    <div id="home_au">
+        <h2>About Us</h2>
+        <p>Our mission at Anthropologie has always been to surprise and delight you with unexpected, distinctive finds for your closet and home. We source and craft all of our products with care, ensuring that any treasure you find at Anthropologie is unique, just like you. Explore our dress shop to find styles and fits perfect for any occasion, from cocktail parties to weddings to casual daytime silhouettes.</p>
+    </div>
+
+    <!-- footer -->
+    <div id="footer">
+        <div id="help">
+          <div>
+            
+            <h3>help</h3>
+            <ul class="footerHelp">
+              <li>Track Your Order</li>
+              <li>Start A Return Or Exchange (US)</li>
+              <li>Return And Exchange</li>
+              <li>Shipping</li>
+              <li>Customer Service</li>
+              <li>Current Promotions</li>
+              <li>Product Recalls</li>
+            </ul>
+          </div>
+          <div>
+            <h3>About Us</h3>
+            <ul class="footerHelp">
+              <a href="ourStory.html"><li>Our Story</li></a>
+              <li>Events</li>
+              <li>A Greater Good</li>
+              <li>Diversity & Inclusion</li>
+              <li>Stories</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Services</h3>
+            <ul class="footerHelp">
+              <li>AnthroPerks</li>
+              <li>Gift Cards</li>
+              <li>Trade Membership</li>
+              <li>Furniture: Guides & Services</li>
+              <li>Store Pickup & Collection Points</li>
+              <li>Klarna</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Contact</h3>
+            <ul class="footerHelp">
+              <a href="contact.html"><li>Contact Us</li></a>
+              <li>Stay Connected</li>
+              <li>Careers</li>
+              <li>Styling Services</li>
+              <li>Request A Catalog</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Social Network</h3>
+            <div>
+              <a href="https://www.instagram.com/gaurav_7ingh/"
+                ><img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYRHI1E_Mh-Hpi4hqtCifpStom1SsyNniyLSIP6e8HU1HN6-lnJ31V&usqp=CAE&s"
+              /></a>
+            </div>
+            <div>
+              <a href="https://twitter.com/gaurav__singh"
+                ><img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIwAAACMCAMAAACZHrEMAAAAY1BMVEX///8ArO0AqOwAqu0ApuwApOwAouv4/P7t9/3z+v6v3Pfj8vzY7fvd8Puq2vaJzPPP6vpEte+TzvQvsu633/iByPNiwPF1xvLC5PlnvvEur+6g1PXJ5vlPuO9ww/KX0/UAnOoO9ENTAAAEeElEQVR4nO2b2ZajIBCGIwXuS4j7lsz7P+WoSaa7EyNViNM3fHd9jtK/RfFTLDmdLBaLxWKxWCwWi8XyC3hB0oRpWMSB99tKiiwXgjPGuHDzMgx+T0pUdgycLwCgjlee84vDg+ZlwJxXGC/fopN2F2yTuqIb8S5lCY/bf38sSoFzbJtlqqelXpeyROf6DI6X1B1zGDYwEbhnDSne+FnLpKbz54fOvXTnx+5/IbhMT9PVBCNsaJnUyCGsHLhnNy+wzXZTJ3cRVcxmXBY4fz7CWmyrsZhTDtbG4wYb+fIG5Gjvydj9BZKahuO1OA6+6fYhHxK8Fr8jxIU/Gg4adbvy31vqh59k+E5i+aIlGGqhzsvk6yMBm/OBwGtp/TkmteQC4WbnbyNUZDgvJgSmPhdl7nJweIZoePjeMJOYvP/qWTX5w2mgxXznDzGTcSISZyANpQXoUKP7/GKkrFa+VhI85qFF4kw1fn1x8nHFK4Rx/dDiIA0+em9a1JvvetTAMImdJr1x5Uu620ZfxUQxy+hGcl2bfbn87AoNTQy/oqWcTuH62GBO+OGDQpqYkKDls52yfL2z0u1C5qURbIn3oPr4pUzUzbtXkSJDFVNsfClAV8Yv3UXKGaoYhW8wIcv0e3+RRhNZjLJSAiacazhEd0kknyGLObWIlAQOnWzr26SJ4sCsV//7n/jomW9aUHN8MaMlhupjFDEaC8TePUgMunpcSO4Dt6fXKDhIy8O065dB0h/UU4Q1x2R5nME1TFYKGyOgF9kLcw3JAEDW1SFiKFpO8dNjGGX+wwIjSQyl1KfDbiQxKPvVhuNXqQtHDaMFRtxq8Un2TmSkbsRWx/UTUOrfheY4MRozk2J3bgeCZHkLGmtnJEDWct/vPAJ6mTfhOcd0FFOt2leJDtHiSL1zgPMRHcUwm1VrHJHEiB3FDyS56eAAel/8naA1rIaRlvyvFJ3ZvtqjZRrivTRXYlFLmRU5TclM9ZZ2+k4pE/veyfP8JF7dyiKj5b5PEpDjhDRVC4tdR8pmy89dgZlM2GjFl9OLhx90BkODOULZhLq/uwFxubRGaczzmM7Z9AvSUEexcr+WU2QobVCnVkoGI2K0LhCsEBuwvP2T0j81cu+YgsqUlmmqLHeaH217SMUw7hni1HsMKrwwF7qps6+8WyfORiYYvbTZPQ2s40VDmtXEAO2cqzfxibslwoTzfiDlNC38uLhE1KULPywu/sUl5ougn58gpfTUKRPggDE9E1xyqu0BaO1+KJUMFTFvJ9h4wM1N71xLjUUcvxjWEiRFX/EPlzW3w5IbqV+aOuvTNO1v9dh1DtOqZQAyQzeAk/bPfKtYT8aCUN62ocjZVS9wSTqCVOI1uW5cAFKjhdRCU1HddlYi8vSYm9jzBWKSHua0K/dHTBGF0sXqAQE3w8XlG37fOkqfYRzGC+l4WJtoKHMH1kc6zHcRu2sT/c8fOvhTuVnlwhX8bkHLXQyX51WZNju26XbgeX48FOmdYoh97Z8DWCwWi8VisVgsFotFl7+teTrpC785FgAAAABJRU5ErkJggg=="
+              /></a>
+            </div>
+            <div>
+              <a href="https://www.facebook.com/profile.php?id=100007446062466"
+                ><img
+                  src="data:image/png;base64,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"
+              /></a>
+            </div>
+            <div>
+              <a href="https://github.com/gaurav7ingh"
+                ><img
+                  src="data:image/png;base64,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"
+              /></a>
+            </div>
+          </div>
+        </div>
+        <div id="contactFooter">
+          <div>
+            <div>
+              <img
+                style="height: 100%"
+                src="https://images.ctfassets.net/5de70he6op10/4gWq1G4qLLgmqlNeHfzV2T/55298745127c36c5876f4013434c0c37/Download_on_the_App_Store_Badge_US-UK_RGB_wht_092917_Copy_2.svg"
+              />
+            </div>
+            <div>
+              <div>
+                <a href="https://www.instagram.com/gaurav_7ingh/"
+                  ><img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYRHI1E_Mh-Hpi4hqtCifpStom1SsyNniyLSIP6e8HU1HN6-lnJ31V&usqp=CAE&s"
+                /></a>
+              </div>
+              <div>
+                <a href="https://twitter.com/gaurav__singh"
+                  ><img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIwAAACMCAMAAACZHrEMAAAAY1BMVEX///8ArO0AqOwAqu0ApuwApOwAouv4/P7t9/3z+v6v3Pfj8vzY7fvd8Puq2vaJzPPP6vpEte+TzvQvsu633/iByPNiwPF1xvLC5PlnvvEur+6g1PXJ5vlPuO9ww/KX0/UAnOoO9ENTAAAEeElEQVR4nO2b2ZajIBCGIwXuS4j7lsz7P+WoSaa7EyNViNM3fHd9jtK/RfFTLDmdLBaLxWKxWCwWi8XyC3hB0oRpWMSB99tKiiwXgjPGuHDzMgx+T0pUdgycLwCgjlee84vDg+ZlwJxXGC/fopN2F2yTuqIb8S5lCY/bf38sSoFzbJtlqqelXpeyROf6DI6X1B1zGDYwEbhnDSne+FnLpKbz54fOvXTnx+5/IbhMT9PVBCNsaJnUyCGsHLhnNy+wzXZTJ3cRVcxmXBY4fz7CWmyrsZhTDtbG4wYb+fIG5Gjvydj9BZKahuO1OA6+6fYhHxK8Fr8jxIU/Gg4adbvy31vqh59k+E5i+aIlGGqhzsvk6yMBm/OBwGtp/TkmteQC4WbnbyNUZDgvJgSmPhdl7nJweIZoePjeMJOYvP/qWTX5w2mgxXznDzGTcSISZyANpQXoUKP7/GKkrFa+VhI85qFF4kw1fn1x8nHFK4Rx/dDiIA0+em9a1JvvetTAMImdJr1x5Uu620ZfxUQxy+hGcl2bfbn87AoNTQy/oqWcTuH62GBO+OGDQpqYkKDls52yfL2z0u1C5qURbIn3oPr4pUzUzbtXkSJDFVNsfClAV8Yv3UXKGaoYhW8wIcv0e3+RRhNZjLJSAiacazhEd0kknyGLObWIlAQOnWzr26SJ4sCsV//7n/jomW9aUHN8MaMlhupjFDEaC8TePUgMunpcSO4Dt6fXKDhIy8O065dB0h/UU4Q1x2R5nME1TFYKGyOgF9kLcw3JAEDW1SFiKFpO8dNjGGX+wwIjSQyl1KfDbiQxKPvVhuNXqQtHDaMFRtxq8Un2TmSkbsRWx/UTUOrfheY4MRozk2J3bgeCZHkLGmtnJEDWct/vPAJ6mTfhOcd0FFOt2leJDtHiSL1zgPMRHcUwm1VrHJHEiB3FDyS56eAAel/8naA1rIaRlvyvFJ3ZvtqjZRrivTRXYlFLmRU5TclM9ZZ2+k4pE/veyfP8JF7dyiKj5b5PEpDjhDRVC4tdR8pmy89dgZlM2GjFl9OLhx90BkODOULZhLq/uwFxubRGaczzmM7Z9AvSUEexcr+WU2QobVCnVkoGI2K0LhCsEBuwvP2T0j81cu+YgsqUlmmqLHeaH217SMUw7hni1HsMKrwwF7qps6+8WyfORiYYvbTZPQ2s40VDmtXEAO2cqzfxibslwoTzfiDlNC38uLhE1KULPywu/sUl5ougn58gpfTUKRPggDE9E1xyqu0BaO1+KJUMFTFvJ9h4wM1N71xLjUUcvxjWEiRFX/EPlzW3w5IbqV+aOuvTNO1v9dh1DtOqZQAyQzeAk/bPfKtYT8aCUN62ocjZVS9wSTqCVOI1uW5cAFKjhdRCU1HddlYi8vSYm9jzBWKSHua0K/dHTBGF0sXqAQE3w8XlG37fOkqfYRzGC+l4WJtoKHMH1kc6zHcRu2sT/c8fOvhTuVnlwhX8bkHLXQyX51WZNju26XbgeX48FOmdYoh97Z8DWCwWi8VisVgsFotFl7+teTrpC785FgAAAABJRU5ErkJggg=="
+                /></a>
+              </div>
+              <div>
+                <a href="https://www.facebook.com/profile.php?id=100007446062466"
+                  ><img
+                    src="data:image/png;base64,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"
+                /></a>
+              </div>
+              <div>
+                <a href="https://github.com/gaurav7ingh"
+                  ><img
+                    src="data:image/png;base64,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"
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div>
+            <img
+              src="https://images.ctfassets.net/5de70he6op10/2DRgCRXNIEkk0wIqUo2ywa/20ea44a95fb361eaf034b42eec179d44/_site_footer__download_app_enable_push_.jpg"
+            />
+          </div>
+          <div>
+            <ul class="footerLaguage">
+              <li>UK</li>
+              <li>India</li>
+              <li>US</li>
+              <li>France</li>
+              <li>Germany</li>
+              <li>Italy</li>
+              <li>Spain</li>
+            </ul>
+          </div>
+          <div>
+            <div>
+              <ul class="footerLaguage">
+                <li>Privacy Policy</li>
+                <li>Terms of Use</li>
+                <li>CA Transparency</li>
+                <li>Accessibility</li>
+                <li>URBN.com</li>
+                <li>For CA Residents</li>
+              </ul>
+            </div>
+            <div>
+              <ul class="footerLaguage">
+                <li>2022 URBN.com. All Rights Reserved.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+</body>
+</html>
+
+<script>
+    const home_productContainers = [...document.querySelectorAll('.home_product-container')];
+    const nxtBtn = [...document.querySelectorAll('.nxt-btn')];
+    const preBtn = [...document.querySelectorAll('.pre-btn')];
+
+    home_productContainers.forEach((item, i) => {
+    let containerDimensions = item.getBoundingClientRect();
+    let containerWidth = containerDimensions.width;
+
+    nxtBtn[i].addEventListener('click', () => {
+        item.scrollLeft += containerWidth;
+    })
+
+    preBtn[i].addEventListener('click', () => {
+        item.scrollLeft -= containerWidth;
+    })
+    })
+</script>
