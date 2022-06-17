@@ -1,0 +1,129 @@
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+#payment-section{
+    display: flex;
+}
+#payment-section-2{
+    width: 65%;
+}
+#ship-details>h2{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+#ship-pickup>h1{
+    text-align: center;
+}
+#ship-details>div>label{
+    font-size: 18px;
+}
+#ship-pickup>h1:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+#ship-details>div>select{
+    display: block;
+    width: 50%;
+    height: 45px;
+    margin-bottom: 20px;
+}
+#ship-details>div>input{
+    width: 100%;
+    height: 45px;
+    margin-bottom: 20px;
+}
+#ship-details>div:nth-child(3)>input{
+ width: 36%;
+}
+@media all and (min-width:0px) and (max-width:1234px){
+    #ship-details>div:nth-child(3)>input{
+        width: 100%;
+       }
+}
+#ship-details>div:nth-child(6)>input{
+    width: 50%;
+    display: block;
+}
+#ship-details>div:nth-child(7)>input{
+    width: 50%;
+    display: block;
+}
+#ship-details>div:nth-child(8)>input{
+    width: 50%;
+    display: block;
+}
+
+/* this is from cart */
+
+#payment-section{
+    display: flex; 
+    padding: 20px 70px;
+    line-height: 25px;
+}
+
+#payment-section-main{
+    width: 35%;
+    height: 400px;
+    position: sticky;
+    top: 0;
+    margin:40px auto 0px 60px;
+    
+}
+#payment-section-main>div{
+    border:1px solid rgb(229 226 222);
+    padding: 20px 20px;
+    margin-top: 15px;
+}
+
+#payment-section-main>div>ul{
+    list-style-type: none;
+    
+}
+#payment-section-main>div>ul>li{
+    display: flex;
+    justify-content: space-between;
+    color: rgb(92 92 95);
+}
+#payment-section-main>div>ul>li:nth-child(4){
+    font-weight: bold;
+    color: black;
+}
+
+.payment-btn{
+    width: 100%;
+    height: 40px;
+    margin: 10px 0px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#payment-section-main>div>ul>button:nth-child(5){
+    background-color: #4b5666;
+    color: white;
+    border: none;
+    margin-top: 25px;
+}
+#payment-section-main>div>ul>button:nth-child(5):hover{
+    background-color: white;
+    color: #4b5666;
+    cursor: pointer;
+    border: 1px solid #4b5666;
+}
+#payment-section-main>div>ul>button:nth-child(6){
+    cursor: pointer;
+}
+#payment-section-main>div>ul>button:nth-child(6){
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+hr{
+    margin-bottom: 40px;
+}
+#wising{
+    font-size: 25px;
+    color: #464d56;
+    text-align: center;
+}
