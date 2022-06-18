@@ -1,112 +1,121 @@
 document.querySelector("button").addEventListener("click", function () {
-  document.querySelector(".bg_modal").style.display = "flex";
-});
-document.querySelector(".close").addEventListener("click", close);
+  document.querySelector(".bg_modal").style.display = "flex"
+})
+document.querySelector(".close").addEventListener("click", close)
 
 function close() {
-  document.querySelector(".bg_modal").style.display = "none";
+  document.querySelector(".bg_modal").style.display = "none"
 }
 
-let arr = JSON.parse(localStorage.getItem("userData")) || [];
+let arr = JSON.parse(localStorage.getItem("userData")) || []
 
-let login = JSON.parse(localStorage.getItem("loginObj")) || [];
+let login = JSON.parse(localStorage.getItem("loginObj")) || []
+// console.log(login.length);
+if (login.length > 0) {
+  let a = document.querySelector("#anch")
+  a.href = "cartPage.html"
+}
 
 if (login.length > 0) {
-  document.querySelector("#signIn_signUp button").innerText = login[0].email;
-  let btn = document.createElement("p");
+  document.querySelector("#signIn_signUp button").innerText = login[0].email
+  let btn = document.createElement("p")
 
-  btn.innerText = "Logout";
+  btn.innerText = "Logout"
 
-  document.querySelector("#signIn_signUp").append(btn);
+  document.querySelector("#signIn_signUp").append(btn)
 }
 
 document
   .querySelector("#signinform")
   .addEventListener("submit", function (event) {
-    event.preventDefault();
+    event.preventDefault()
 
-    document.querySelector("#signIn_signUp>button").innerText = "";
+    document.querySelector("#signIn_signUp>button").innerText = ""
     let userObjsignin = {
       email: document.querySelector("#email").value,
       password: document.querySelector("#password").value,
-    };
+    }
 
-    let email = document.querySelector("#email").value;
-    let password = document.querySelector("#password").value;
+    let email = document.querySelector("#email").value
+    let password = document.querySelector("#password").value
     // console.log(email, password);
     if (checkfunction(email, password) == true) {
-      alert("Login Successful");
+      alert("Login Successful")
       // let signName = (document.querySelector("#signIn_signUp>button").innerText = email);
 
-      login.push(userObjsignin);
-      localStorage.setItem("loginObj", JSON.stringify(login));
+      login.push(userObjsignin)
+      localStorage.setItem("loginObj", JSON.stringify(login))
       // document.querySelector("#signIn_signUp button").append(email);
 
-      window.location.reload();
-      close();
+      window.location.reload()
+      close()
     } else {
-      alert("Email Or Password Wrong");
+      alert("Email Or Password Wrong")
     }
-  });
+  })
 // console.log(arr);
 function checkfunction(email, password) {
   let fill2 = arr.filter(function (elem) {
-    return email === elem.email && password === elem.password;
-  });
+    return email === elem.email && password === elem.password
+  })
   if (fill2.length > 0) {
-    return true;
+    return true
   } else {
-    return false;
+    return false
   }
 }
-
+document.querySelector("#anch").addEventListener("click", function () {
+  if (login.length == 0) {
+    alert("Please login first")
+  }
+})
 // ------------sign Up------------------------
 
 document.querySelector("#signUp").addEventListener("click", function () {
-  event.preventDefault();
-  document.querySelector(".bg_modal_creat").style.display = "flex";
-});
-document.querySelector(".close_creat").addEventListener("click", close_creat);
+  event.preventDefault()
+  document.querySelector(".bg_modal_creat").style.display = "flex"
+})
+document.querySelector(".close_creat").addEventListener("click", close_creat)
 
 function close_creat() {
-  document.querySelector(".bg_modal_creat").style.display = "none";
+  document.querySelector(".bg_modal_creat").style.display = "none"
 }
 
-let userArr = JSON.parse(localStorage.getItem("userData")) || [];
+let userArr = JSON.parse(localStorage.getItem("userData")) || []
 document
   .querySelector("#signupform")
   .addEventListener("submit", function (event) {
-    event.preventDefault();
+    event.preventDefault()
 
     let userObj = {
       email: document.querySelector("#email_creat").value,
       mobile: document.querySelector("#mobile_creat").value,
       password: document.querySelector("#password_creat").value,
-    };
-    let mobile = document.querySelector("#mobile_creat").value;
+    }
+    let mobile = document.querySelector("#mobile_creat").value
     if (mobile.length == 10) {
       if (checksignup(mobile) == true) {
-        userArr.push(userObj);
-        alert("Your account has been created");
-        localStorage.setItem("userData", JSON.stringify(userArr));
-        window.location.reload();
-        close_creat();
+        userArr.push(userObj)
+        alert("Your account has been created")
+        localStorage.setItem("userData", JSON.stringify(userArr))
+        window.location.reload()
+        close_creat()
       } else {
-        alert("Account alredy exist");
+        alert("Account alredy exist")
       }
     } else {
-      alert("Mobile Number Should be 10 digit");
+      alert("Mobile Number Should be 10 digit")
     }
-  });
+  })
 
 function checksignup(mobile) {
   let fill = userArr.filter(function (elem) {
-    return mobile === elem.mobile;
-  });
+    return mobile === elem.mobile
+  })
   if (fill.length > 0) {
-    return false;
+    return false
   } else {
-    return true;
+    return true
   }
 }
 
@@ -117,6 +126,17 @@ document
   .addEventListener("click", function () {
     // localStorage.getItem("loginObj")
     alert("Logout Successful")
-    localStorage.removeItem("loginObj");
-    window.location.reload();
-  });
+    localStorage.removeItem("loginObj")
+    window.location.reload()
+  })
+
+// if(login.length>0){
+//   let a=document.querySelector("#anch")
+// a.href="cartPage.html"
+
+// }
+// let btnBtn = document.querySelector("")
+
+let basketarr = JSON.parse(localStorage.getItem("objarrayforBasket")) || [];
+document.querySelector("#onnavbar").innerText = basketarr.length;
+document.querySelector("#onnavbar").style.display = "flex";

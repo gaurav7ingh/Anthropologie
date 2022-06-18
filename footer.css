@@ -4,14 +4,17 @@
     box-sizing: border-box;
     font-family: Arial, sans-serif;
 }
-a{
+
+#footer a{
     text-decoration: none;
 }
 #footer{
+    margin-top: 30px;
+    position: static;
     background-color: 
     #f7f6f2 ;
 }
-.footerHelp {
+.footerHelp{
     list-style-type: none;
 }
 .footerHelp>li {

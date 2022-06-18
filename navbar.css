@@ -10,7 +10,7 @@
     border: 1px solid;
     padding: 5px;
     color: white;
-    background-color: blue;
+    background-color: rgb(22,123,147);
     cursor: pointer;
     font-family: sans-serif;
 
@@ -27,14 +27,13 @@
 
 #navbar {
 
-    border-top: 1px solid;
+    border-top: 1px solid rgb(163, 163, 163);
     height: 60px;
     /* display: flex; */
-    border-bottom: 1px solid;
+    border-bottom: 1px solid rgb(163, 163, 163);
     /* justify-content: center;
     align-content: center; */
     background-color: white;
-
 }
 
 #inner {
@@ -47,29 +46,39 @@
     align-items: center;
     /* margin-top: 30px;
     margin-bottom: 30px; */
-
+    position: relative;
+    z-index: 1;
 }
 
-ul {
+#inner>ul {
     list-style: none;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-li {
+#nav-position a:hover{
+    text-decoration: none;
+    color: rgb(0, 170, 255);
+    text-decoration: underline;
+}
+#inner>ul>li {
 
     margin-left: 15px;
-    margin-right: 25px;
-    font-size: 0.9rem;
+    margin-right: 15px;
+    font-size: 0.88rem;
     line-height: 1.0;
     letter-spacing: 0.06rem;
+    line-height: 15px;
 }
+
 
 li>div {
     height: 100%;
     /* border: 1px solid; */
     font-family: "Avenir Medium", sans-serif;
     cursor: pointer;
-    
+    margin-left: 10px;
 }
 
 .submenu {
@@ -81,7 +90,9 @@ li>div {
     position: absolute;
     margin-top: 5px;
     padding: 20px;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.823);
+    opacity: 0.97;
+    z-index: 1;
 }
 
 /* .submenu {
@@ -94,16 +105,18 @@ li>div {
     /* display: flex; */
     padding-top: 30px;
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    background-color: white;
 
 }
 
-.listDiv ul {
+.listDiv>ul {
     display: block;
     margin: 10px 0px;
     margin-right: 50px;
 }
 
 .listDiv ul li {
+    display: block;
     margin: 10px;
 }
 
@@ -123,10 +136,14 @@ li>div {
     margin: auto;
 }
 
+hr {
+    color: rgb(197, 197, 197);
+}
 h1+hr {
     width: 80%;
     margin: auto;
     margin-bottom: 20px;
+    color: rgb(168, 167, 167);
 }
 
 hr+p {
@@ -225,8 +242,13 @@ a {
     margin-bottom: 20px;
     /* border-radius: 10px;       */
 }
+#signIn_signUp>button{
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
 
-button {
+#searchBar>button {
     padding: 10px;
     border: none;
     cursor: pointer;
@@ -244,16 +266,17 @@ button {
     justify-content: end;
 
     /* margin-right: 100px; */
-    background-color: aqua;
-
+    background-color: #f7f6f2;
+    color: rgb(0, 208, 255);
 }
 
 #signIn_signUp button {
     margin-right: 100px;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 15px;
+    font-size: 16px;
     background-color: transparent;
     letter-spacing: inherit;
+    color: rgb(100, 179, 195);
 
 }
 
@@ -273,7 +296,8 @@ button {
     justify-content: center;
     align-items: center;
     display: none;
-
+    position: fixed;
+    z-index: 8000;
 }
 
 .div_content {
@@ -285,11 +309,36 @@ button {
     position: relative;
 }
 
+
+
+.bg_modal_creat {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    /* opacity: 0.3; */
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    position: fixed;
+    z-index: 8000;
+}
+
+.div_content_creat {
+    width: 500px;
+    height: 600px;
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
 .div_content>h1 {
     margin-bottom: 10px;
 }
 
-input {
+#signinform input {
     display: block;
     margin: auto;
     padding-top: 10px;
@@ -340,34 +389,12 @@ input {
 
 
 
-.bg_modal_creat {
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
-    /* opacity: 0.3; */
-    position: absolute;
-    top: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    display: none;
-
-}
-
-.div_content_creat {
-    width: 500px;
-    height: 600px;
-    background-color: white;
-    text-align: center;
-    padding: 20px;
-    position: relative;
-}
 
 .div_content_creat>h1 {
     margin-bottom: 10px;
 }
 
-input {
+#nav-position input {
     display: block;
     margin: auto;
     padding-top: 10px;
@@ -376,7 +403,15 @@ input {
     font-size: 20px;
     width: 80%;
 }
-
+#searchBar>input{
+    margin-bottom: 18px;
+    margin-left: 20px;
+    font-size: 15px;
+    
+}
+#searchBar>input::placeholder{
+    color: rgb(115, 170, 181);
+}
 .submitButton_creat {
     width: 80%;
     padding: 10px;
@@ -411,4 +446,38 @@ input {
 #cart{
     cursor: pointer;
     /* border: 1px solid; */
+}
+
+#for-bg-modal-css{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+#nav-position{
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    margin-bottom: 15px;
+}
+
+#cart{
+    cursor: pointer;
+    /* border: 1px solid; */
+    display: flex;
+    /* border: 1px solid; */
+    position: relative;
+}
+#onnavbar{
+    display: none;
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    height: 20px;
+    width: 20px;
+    padding-left: 5px;
+    background-color: rgb(22,123,147);
+    opacity: 0.8;
+    position:absolute;
+    border-radius: 10px;
+    right: -3px;
 }

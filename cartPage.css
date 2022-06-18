@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 #cartPageFinal{
-    border: 1px solid;
     display: flex; 
     padding: 20px 70px;
     line-height: 25px;

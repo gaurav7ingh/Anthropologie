@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BEAUTY</title>
+    <title>GARDEN</title>
     <a href="clothing.html"></a>
     <a href="shoes.html"></a>
-    <script src="https://kit.fontawesome.com/38439e7720.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="backgroud.css">
+
     <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="footer.css">
-    <link rel="stylesheet" href="backgroud.css">
+    <script src="https://kit.fontawesome.com/38439e7720.js" crossorigin="anonymous"></script>
     <style>
         *{
             padding: 0px;
@@ -267,10 +268,14 @@
             /* width:100%; */
             gap:10px;
             
+            
         }
 
        
-        
+        /* #complete{
+            width: 400px;
+            height: 380px;
+        } */
         #box{
             width:100%;
         
@@ -880,7 +885,7 @@
             <a href="homepage2.html">Homes and Furniture</a>
             <a href="wedding.html">Weddings</a>
             <a href="sale.html">Sale</a>
-            <a href="garden.html">Garden & outdoor</a>
+            <a href="gift.html">Gifts & Candels</a>
             <h3>Filter by:</h3>
             <hr>
             <h2 id="price">Price +</h2>
@@ -897,8 +902,8 @@
     <div id="box">
         <div id="shoes">
             <div>
-                <h1>Beauty & Wellness</h1>
-                <p>1713 products</p>
+                <h1>Garden & Outdoor</h1>
+                <p>516 products</p>
             </div>
             <div>
                 <p>Sort:</p>
@@ -912,7 +917,7 @@
                     <option value="za">Z-A</option>
                 </select>
                 <!-- <button class="btn-btn"><a class="cloth"href=""><</a></button> -->
-                <button id="btn-btn"><a id="cloth" href="garden.html">5</a></button>
+                <button id="btn-btn"><a id="cloth" href="wedding.html">6</a></button>
             </div>
         </div>
         <div id="images">
@@ -1069,277 +1074,177 @@
 </html>
 <script>
 let item=[
+	{
+    image: "https://images.ctfassets.net/5de70he6op10/7u1pLwE4IjdNH5aXRiBKmG/3bd764e4ff439ddfc8caf2410234f414/061522_20OffTextiles_OutCatTile_01.jpg?w=546&q=80&fm=webp",
+    name: "",
+    price: "",
+    productID: "",
+    catagory: "Home",
+    img: [],
+  },
 {
-    image:["https://images.urbndata.com/is/image/Anthropologie/65972366_067_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349"],
-    name: "Mer-Sea & Co. Shimmer Sun Lotion ",
-    price: "28.00",
-    productID: "Beauty1",
+    image: "https://images.urbndata.com/is/image/Anthropologie/B45246403AA_014_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=960",
+    name: "Peacock Ottoman",
+    price: "498.00",
+    productID: "Garden1",
     catagory: "Home",
-    img: ['url("https://images.urbndata.com/is/image/Anthropologie/65972366_067_s?fit=constrain&hei=56&qlt=75")',
-    'url( "https://images.urbndata.com/is/image/Anthropologie/65972366_040_s?fit=constrain&hei=56&qlt=75")'],
-  },
-   {
-    image:["https://images.urbndata.com/is/image/Anthropologie/65972341_000_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349"],
-    name: "Mer-Sea & Co. After-Sun Soothe",
-    price: 24.00,
-     productID: "Beauty2",
-     catagory: "Home",
-     img: ['url("https://images.urbndata.com/is/image/Anthropologie/65972341_000_s?fit=constrain&hei=56&qlt=75")'],
-  },
-   {
-    image:["https://images.urbndata.com/is/image/Anthropologie/65972374_000_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349"],
-    name: "Mer-Sea & Co. Sun Bath Soak",
-    price: 30.00,
-    productID: "Beauty3",
-    catagory: "Home",
-     img: ['url("https://images.urbndata.com/is/image/Anthropologie/65972374_000_s?fit=constrain&hei=56&qlt=75")'],
-  },
-   {
-    image:["https://images.urbndata.com/is/image/Anthropologie/65972358_000_b?$an-category$&fit=constrain&fmt=webp&hei=1046&qlt=80&wid=698"],
-    name: "Mer-Sea & Co. Sun Handheld Dry Brush",
-    price: "34.00",
-    productID: "Beauty4",
-    catagory: "Home",
-    img: ['url("https://images.urbndata.com/is/image/Anthropologie/65972358_000_s?fit=constrain&hei=56&qlt=75")'],
-  },
-    {
-    image:["https://images.urbndata.com/is/image/Anthropologie/40188179_000_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349"],
-    name: "Capri Blue Volcano Hand Soap & Lotion Gift Set",
-    price: 42.00,
-    productID: "Beauty5",
-    catagory: "Home",
-   img: ['url("https://images.urbndata.com/is/image/Anthropologie/40188179_000_s?fit=constrain&hei=56&qlt=75")'],
-  },
-     {
-    image:["https://images.urbndata.com/is/image/Anthropologie/37010790_000_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349"],
-    name: "Capri Blue Volcano Hand Cream",
-    price: "22.00",
-    productID: "Beauty6",
-    catagory: "Home",
-    img: ['url("https://images.urbndata.com/is/image/Anthropologie/37010790_000_s?fit=constrain&hei=56&qlt=75")'],
-  },
-    {
-    image:["https://images.urbndata.com/is/image/Anthropologie/59162230_040_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
-        "https://images.urbndata.com/is/image/Anthropologie/59162230_040_b2?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=960"],
-    name: "Capri Blue Volcano Bar Soap",
-    price: 12.00,
-    productID: "Beauty7",
-    catagory: "Bestselling",
-    img: ['url("https://images.urbndata.com/is/image/Anthropologie/59162230_040_s?fit=constrain&hei=56&qlt=75")'],
-  },
-    {
-    image:["https://images.urbndata.com/is/image/Anthropologie/60467438_040_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349"],
-    name: "Capri Blue Mini Hand Cream",
-    price: 14.00,
-    productID: "Beauty8",
-    catagory: "Home",
-     img: ['url("https://images.urbndata.com/is/image/Anthropologie/60467438_040_s?fit=constrain&hei=56&qlt=75")'],
-  },
-    {
-    image:["https://images.urbndata.com/is/image/Anthropologie/65972382_000_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349"],
-    name: "Mer-Sea & Co. Sun Loofah Brush",
-    price: 38.00,
-    productID: "Beauty9",
-    catagory: "Home",
-    img: ['url("https://images.urbndata.com/is/image/Anthropologie/65972382_000_s?fit=constrain&hei=56&qlt=75")'],
-  },
-   {
-    image:["https://images.urbndata.com/is/image/Anthropologie/68446657_000_b3?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=960",
-         "https://images.urbndata.com/is/image/Anthropologie/68446657_000_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=960"],
-    name: "Wrapped in Florals Fragrance Sampler",
-    price: 20.00,
-    productID: "Beauty10",
-    catagory: "Home",
-    img: ['url("https://images.urbndata.com/is/image/Anthropologie/68446657_000_s?fit=constrain&hei=56&qlt=75")'],
-  },
-    {
-    image:["https://images.urbndata.com/is/image/Anthropologie/69266591_001_b10?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=960"],
-    name: "Memo Paris Eau De Parfum",
-    price: 300.00,
-    productID: "Beauty11",
-    catagory: "Home",
-    img: ['url("https://images.urbndata.com/is/image/Anthropologie/69266591_001_s?fit=constrain&hei=56&qlt=75")',
-    'url("https://images.urbndata.com/is/image/Anthropologie/69266591_010_s?fit=constrain&hei=56&qlt=75")',
-    'url("https://images.urbndata.com/is/image/Anthropologie/69266591_040_s?fit=constrain&hei=56&qlt=75")',
-    'url("https://images.urbndata.com/is/image/Anthropologie/69266591_070_s?fit=constrain&hei=56&qlt=75")',
-	'url("https://images.urbndata.com/is/image/Anthropologie/69266591_072_s?fit=constrain&hei=56&qlt=75")'],
-  },
-     {
-    image:["https://images.urbndata.com/is/image/Anthropologie/40334666_070_b14?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=960"],
-    name: "Slip Silk Pillowcase",
-    price: 89.00,
-    productID: "Beauty12",
-    catagory: "Home",
-    img: ['url("https://images.urbndata.com/is/image/Anthropologie/40334666_052_s?fit=constrain&hei=56&qlt=75")',
-    'url("https://images.urbndata.com/is/image/Anthropologie/40334666_065_s?fit=constrain&hei=56&qlt=75")',
-    'url("https://images.urbndata.com/is/image/Anthropologie/40334666_007_s?fit=constrain&hei=56&qlt=75")',
-    'url("https://images.urbndata.com/is/image/Anthropologie/40334666_010_s?fit=constrain&hei=56&qlt=75")'],
+    img: ['url("data:image/jpeg;base64,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")'],
   },
 	{
-    image:["https://images.urbndata.com/is/image/Anthropologie/40522195_030_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=960",
-            "https://images.urbndata.com/is/image/Anthropologie/40522195_030_b10?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=960"],
-    name: "Pharmacia Eau De Parfum",
-    price: 26.00,
-    productID: "Beauty13",
+    image: "https://images.urbndata.com/is/image/Anthropologie/45246403AA_001_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=960",
+    name: "Peacock Indoor/Outdoor Daybed",
+    price: "998.00",
+    productID: "Garden2",
     catagory: "Home",
-    img: ['url("https://images.urbndata.com/is/image/Anthropologie/65972341_000_s?fit=constrain&hei=56&qlt=75")',
-    'url("https://images.urbndata.com/is/image/Anthropologie/40522195_065_s?fit=constrain&hei=56&qlt=75")',
-    'url("https://images.urbndata.com/is/image/Anthropologie/40522195_055_s?fit=constrain&hei=56&qlt=75")',
-    'url("https://images.urbndata.com/is/image/Anthropologie/40522195_072_s?fit=constrain&hei=56&qlt=75")'],
+    img: ['url( "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUSEhMVFRUVFRcXFxcVGBgXFRcVFRUXFxcVFRcYHSggGBolHRUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDQ0NDg0NDysZFRktLSsrKysrLTc3KzcrLSstLSsrNzctNzc3Ny0tNys3Ny0rLS03KzctNzc3LSstLS03Lf/AABEIAOEA4QMBIgACEQEDEQH/xAAXAAEBAQEAAAAAAAAAAAAAAAAAAQIH/8QAJhABAQEAAAQFBAMAAAAAAAAAAAERAiFh8BIxQVHBobHR8XGBkf/EABYBAQEBAAAAAAAAAAAAAAAAAAABAv/EABYRAQEBAAAAAAAAAAAAAAAAAAARAf/aAAwDAQACEQMRAD8A4xUWswYW1FQADAWJSUoC2CWgGkQVQhRCotQUWJQFol5KChgICWqCYqwsA0hhAAAZUAEXUBFABQgJQAEUFABChxIKVYaCBBRVgiiCYlUFhQtAIYaC6JoCIqApq1AQKaApDQECgYSJgK0gtEShUFXFzkhoi1BYBKLEAA0BUAWgoJy7xVz+VBjWVKCoGghgUACAIpQRUUUioAUC0C0iaoAoIAUEpi4mAukiyACpFnfUDl7KxgAUxAUNUGSKgEhhpgLqUAII1ATWqyaBUa1BUUURFSLQBqM2gBpQFtSKBpI14WbQPFVTw98gCVMIlgCpFoIACKmLBSglAVNWAUJFETEqpAWAsAioQCwq1KCQFAxYmkoNaza1EoM6LnfdUEiWLCgiosoEqGoAqasAWxNWgkiyJiwFgJQNKyoGrEIiqsQVFSwpgBUUBUqwFiLYmUDRM6BQOI0AkVmLoJErTNgKQ0gLogAGgLAhQQACVeogNWVDVAQAEq4AjUTAFMWRATA5e8/wBBSggQBcRUBMa1MMBZCoUEWVK1KKRcSAhai4YCSkMXAXRCAst79wsQE0qgCxAFpUiwEDb1ARUAAAVKUBFCAJY0gIsMBVEURLVnpzzvpzSgEqxmNQDFiAGi1nAUpIUANICwlQBc6CAItEAVMXAKi4gIpSUFQ0BFRoDCqmAgACxJFwDVSRQQEwAUgEAwFkTdFBBrwzv9gM6hpoFAwFRalAtEigaULQTGozjUFDUgIigKpiRbRFEUBDV0GYoAtJTixICxKqAb3qpgCUtCAKEAqKUEtEqyAtiU0tBMaiasASqgGgABFAVFAiKgAAKkVMBdSqkgKADOCFBYBAWoqACYCgqALEaBIUKIYimCmqkBFppFoIGAFNAAFARZUwDev3ABEvygDUJ39ABq/n7s8XoAF+EnkANRADCr6gBxJQBanuALPwABPT+1ACpxACcPy1PKgKxFAFvkkARQBX/9k=")',
+	'url( "https://images.urbndata.com/is/image/Anthropologie/45246403AA_047_s?fit=constrain&hei=56&qlt=75")'],
   },
 	{
-    image:["https://images.urbndata.com/is/image/Anthropologie/66398389_041_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=960"],
-    name: "Soleil Toujours SPF 30 Antioxidant Sunscreen Spray",
-    price: 36.00,
-    productID: "Beauty14",
-    catagory: "Bestselling",
-    img: ['url("data:"image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAGFBMVEUAKlTa18308+/p6u0AAEPp5+H+8AADDjngE8AAABH0lEQVR4nO3PCQ2EABAAMX78Oz4IORGzaR10Wadb1nOb7HyG27XPdW3vcL+Pqe79Gx7LVIdhnmGfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYd9/eB9T3d/w2ue63uG5TXY+w+l+h1EihcbqknUAAAAASUVORK5CYII=")'],
-  },
-	{
-    image:["https://images.urbndata.com/is/image/Anthropologie/69267904_070_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=960",
-            "https://images.urbndata.com/is/image/Anthropologie/69267698_001_b11?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=960"],
-    name: "Vilhelm Parfumerie Eau De Parfum",
-    price: 150.00,
-    productID: "Beauty15",
+    image: "https://images.urbndata.com/is/image/Anthropologie/A45246403AA_014_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=960",
+    name: "Peacock Cabana Daybed",
+    price: "1198.00",
+    productID: "Garden3",
     catagory: "Home",
-    img: ['url("https://images.urbndata.com/is/image/Anthropologie/69267698_001_s?fit=constrain&hei=56&qlt=75")',
-    'url("https://images.urbndata.com/is/image/Anthropologie/69267698_072_s?fit=constrain&hei=56&qlt=75")',
-    'url("https://images.urbndata.com/is/image/Anthropologie/69267698_070_s?fit=constrain&hei=56&qlt=75")'],
+    img: ['url("ddata:image/jpeg;base64,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")'],
   },
 	{
-    image:["https://images.urbndata.com/is/image/Anthropologie/48436679_025_b10?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=960",
-            "https://images.urbndata.com/is/image/Anthropologie/48436679_025_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=960"],
-    name: "Nostalgia Eau De Parfum",
-    price: 24.00,
-    productID: "Beauty16",
-    catagory: "Bestselling",
-    img: ['url("https://images.urbndata.com/is/image/Anthropologie/48436679_025_s?fit=constrain&hei=56&qlt=75")',
-    'url("https://images.urbndata.com/is/image/Anthropologie/48436679_080_s?fit=constrain&hei=56&qlt=75")',
-    'url("https://images.urbndata.com/is/image/Anthropologie/48436679_049_s?fit=constrain&hei=56&qlt=75")',
-	'url("https://images.urbndata.com/is/image/Anthropologie/48436679_030_s?fit=constrain&hei=56&qlt=75)'],
-  },
-	{
-    image:["https://images.urbndata.com/is/image/Anthropologie/76183573_010_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=960"],
-    name: "ATHR The Big Bang Mascara",
-    price: 28.00,
-    productID: "Beauty17",
+    image: "https://images.urbndata.com/is/image/Anthropologie/55882518_041_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=960",
+    name: "Peacock Indoor/Outdoor Hanging Chair",
+    price: "598.00",
+    productID: "Garden4",
     catagory: "Newest",
-    img: ['url("https://images.urbndata.com/is/image/Anthropologie/76183573_010_s?fit=constrain&hei=56&qlt=75")'],
+    img: ['url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAA1BMVEUeADSQdkcVAAAASElEQVR4nO3BgQAAAADDoPlTX+AIVQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwDcaiAAFXD1ujAAAAAElFTkSuQmCC")'],
   },
 	{
-    image:["https://images.urbndata.com/is/image/Anthropologie/76183565_000_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=960"],
-    name: "ATHR Citrine Crystal Eyeshadow Quad",
-    price: 20.00,
-    productID: "Beauty18",
-    catagory: "Newest",
-    img: ['url("https://images.urbndata.com/is/image/Anthropologie/76183565_000_s?fit=constrain&hei=56&qlt=75")'],
-  },
-	{
-    image:["https://images.urbndata.com/is/image/Anthropologie/76183524_065_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=960"],
-    name: "ATHR Desert Moon Illuminating Oil",
-    price: 38.00,
-    productID: "Beauty19",
-    catagory: "Newest",
-    img: ['url("https://images.urbndata.com/is/image/Anthropologie/76183524_065_s?fit=constrain&hei=56&qlt=75")'],
-  },
-	{
-    image:["https://images.urbndata.com/is/image/Anthropologie/76183508_000_b?$a15-pdp-detail-shot$&fit=constrain&qlt=80&wid=100"],
-    name: "ATHR Desert Sunset Eyeshadow Palette",
-    price: 48.00,
-    productID: "Beauty20",
-    catagory: "Newest",
-    img: ['url("https://images.urbndata.com/is/image/Anthropologie/76183508_000_s?fit=constrain&hei=56&qlt=75")'],
-  },
-	{
-    image:["https://images.urbndata.com/is/image/Anthropologie/78205309_010_b?$a15-pdp-detail-shot$&fit=constrain&qlt=80&wid=100"],
-    name: "Mario Badescu Coconut Body Oil",
-    price: "16.00",
-    productID: "Beauty21",
-    catagory: "Newest",
-    img: ['url("https://images.urbndata.com/is/image/Anthropologie/78205309_010_s?fit=constrain&hei=56&qlt=75")'],
-  },
-	{
-    image:["https://images.urbndata.com/is/image/Anthropologie/76183508_000_b?$a15-pdp-detail-shot$&fit=constrain&qlt=80&wid=100"],
-    name: "ATHR Desert Sunset Eyeshadow Palette",
-    price: "48.00",
-    productID: "Beauty22",
-    catagory: "Newest",
-    img: ['url("https://images.urbndata.com/is/image/Anthropologie/76183508_000_s?fit=constrain&hei=56&qlt=75")'],
-  },
-	{
-    image:["https://images.urbndata.com/is/image/Anthropologie/78001815_040_b?$a15-pdp-detail-shot$&fit=constrain&qlt=80&wid=100"],
-    name: "Swissco Round Scalp Brush",
-    price: "10.00",
-    productID: "Beauty23",
-    catagory: "Newest",
-    img: ['url("https://images.urbndata.com/is/image/Anthropologie/78001815_040_s?fit=constrain&hei=56&qlt=75")',
-        'url("https://images.urbndata.com/is/image/Anthropologie/78001815_066_s?fit=constrain&hei=56&qlt=75")'],
-  },
-	{
-    image:["https://images.urbndata.com/is/image/Anthropologie/78001831_046_b10?$a15-pdp-detail-shot$&fit=constrain&qlt=80&wid=100"],
-    name: "Swissco Wooden Paddle Brush",
-    price: "12.00",
-    productID: "Beauty24",
-    catagory: "Newest",
-    img: ['url("https://images.urbndata.com/is/image/Anthropologie/78001831_046_s?fit=constrain&hei=56&qlt=75")',
-        'url("https://images.urbndata.com/is/image/Anthropologie/78001831_263_s?fit=constrain&hei=56&qlt=75")'],
-  },
-	{
-    image:["https://images.urbndata.com/is/image/Anthropologie/64934433_048_b?$a15-pdp-detail-shot$&fit=constrain&qlt=80&wid=100"],
-    name: "Mer-Sea & Co. Avant Garden Bar Soap",
-    price: "10.95",
-    productID: "Beauty25",
-    catagory: "Bestselling",
-    img: ['url("https://images.urbndata.com/is/image/Anthropologie/64934433_048_s?fit=constrain&hei=56&qlt=75")',
-        'url("https://images.urbndata.com/is/image/Anthropologie/64934433_066_s?fit=constrain&hei=56&qlt=75")'],
-  },
-  {
-    image:["https://images.urbndata.com/is/image/Anthropologie/66398389_041_b?$a15-pdp-detail-shot$&fit=constrain&qlt=80&wid=100"],
-    name: "Soleil Toujours SPF 30 Antioxidant Sunscreen Spray",
+    image: "https://images.urbndata.com/is/image/Anthropologie/67531244_111_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=960",
+    name: "Preserved Olive Branch Bunch",
     price: "36.00",
-    productID: "Beauty26",
+    productID: "Garden5",
+    catagory: "Bestselling",
+    img: ['url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyI0YS268yf66pRHOjO3ASQ5eQI1Uuw5ZbKg&usqp=CAU")'],
+  },
+	{
+    image: "https://images.urbndata.com/is/image/Anthropologie/64082399_111_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=960",
+    name: "Dried Manzanita Branch",
+    price: "138.00",
+    productID: "Garden6",
+    catagory: "Bestselling",
+    img: ['url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyI0YS268yf66pRHOjO3ASQ5eQI1Uuw5ZbKg&usqp=CAU")'],
+  },
+	{
+    image: "https://images.urbndata.com/is/image/Anthropologie/66895517_014_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=960",
+    name: "Masaya & Co. Apanas Dining Table",
+    price: "2198.00",
+    productID: "Garden7",
+    catagory: "Bestselling",
+    img: ['url("https://images.urbndata.com/is/image/Anthropologie/66895517_014_s?fit=constrain&hei=56&qlt=75")'],
+  },
+{
+    image: "https://images.urbndata.com/is/image/Anthropologie/69655785_010_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=960",
+    name: "Rustic Stoneware Watering Can",
+    price: "30.40",
+    productID: "Garden8",
+    catagory: "Bestselling",
+    img: ['url("https://images.urbndata.com/is/image/Anthropologie/69655785_010_s?fit=constrain&hei=56&qlt=75")'],
+  },
+{
+    image: "https://images.urbndata.com/is/image/Anthropologie/66490830_018_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=960",
+    name: "Celma Indoor/Outdoor Pillow",
+    price: "54.40",
+    productID: "Garden9",
+    catagory: "Newest",
+    img: ['url("https://images.urbndata.com/is/image/Anthropologie/66490830_018_s?fit=constrain&hei=56&qlt=75")'],
+  },
+{
+    image: "https://images.urbndata.com/is/image/Anthropologie/67909051_001_b2?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=960",
+    name: "Iron Topiary Frame, Flare",
+    price: "28.00",
+    productID: "Garden10",
+    catagory: "Newest",
+    img: ['url("data:image/png;base64,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")'],
+  },
+{
+    image: "https://images.urbndata.com/is/image/Anthropologie/67608109_010_b15?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=960",
+    name: "Tulip Indoor/Outdoor Bench",
+    price: "898.00",
+    productID: "Garden11",
+    catagory: "Newest",
+    img: ['url("https://images.urbndata.com/is/image/Anthropologie/67608109_010_s?fit=constrain&hei=56&qlt=75")'],
+  },
+{
+    image: "https://images.urbndata.com/is/image/Anthropologie/65525842_000_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=960",
+    name: "Fresh Free Spirit Roses Bunch, 2 Dozen",
+    price: "114.00",
+    productID: "Garden12",
     catagory: "Home",
-    img: ['url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAGFBMVEUAKlTa18308+/p6u0AAEPp5+H+//8AADDjngE8AAABH0lEQVR4nO3PCQ2EABAAMX78Oz4IORGzaR10Wadb1nOb7HyG27XPdW3vcL+Pqe79Gx7LVIdhnmGfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYd9/eB9T3d/w2ue63uG5TXY+w+l+h1EihcbqknUAAAAASUVORK5CYII=")'],
+    img: ['url("https://m.media-amazon.com/images/I/51UW1849rJL._AC_SY450_.jpg")'],
   },
-	{
-    image:["https://images.urbndata.com/is/image/Anthropologie/67983239_000_b?$a15-pdp-detail-shot$&fit=constrain&qlt=80&wid=100"],
-    name: "Straw Fan",
-    price: "24.00",
-    productID: "Beauty27",
+{
+    image: "https://images.urbndata.com/is/image/Anthropologie/55344436_073_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=960",
+    name: "Business & Pleasure Co. Vintage Stripe Beach Towel",
+    price: "63.20",
+    productID: "Garden13",
+    catagory: "Home",
+    img: ['url("https://images.urbndata.com/is/image/Anthropologie/55344436_073_s?fit=constrain&hei=56&qlt=75")'],
+  },
+{
+    image: "https://images.urbndata.com/is/image/Anthropologie/66363441_001_b10?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=960",
+    name: "Danae Indoor/Outdoor Pillow",
+    price: "46.40",
+    productID: "Garden15",
     catagory: "Bestselling",
-    img: ['url("https://images.urbndata.com/is/image/Anthropologie/67983239_000_s?fit=constrain&hei=56&qlt=75")'],
+    img: ['url("https://images.urbndata.com/is/image/Anthropologie/66363441_001_s?fit=constrain&hei=56&qlt=75")',
+	'url("https://images.urbndata.com/is/image/Anthropologie/66363441_095_s?fit=constrain&hei=56&qlt=75")'],
   },
-	{
-    image:["https://images.urbndata.com/is/image/Anthropologie/64018831_111_b?$a15-pdp-detail-shot$&fit=constrain&qlt=80&wid=100"],
-    name: "De La Heart Lymphatic Drainage Body Tool",
-    price: "29.00",
-    productID: "Beauty28",
+{
+    image: "https://images.urbndata.com/is/image/Anthropologie/65525842_000_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=960",
+    name: "Fresh Free Spirit Roses Bunch, 2 Dozen",
+    price: "114.00",
+    productID: "Garden15",
     catagory: "Bestselling",
-    img: ['url("https://images.urbndata.com/is/image/Anthropologie/64018831_111_s?fit=constrain&hei=56&qlt=75")'],
+    img: ['url("https://images.urbndata.com/is/image/Anthropologie/66363441_001_s?fit=constrain&hei=56&qlt=75")',
+	'url("https://m.media-amazon.com/images/I/51UW1849rJL._AC_SY450_.jpg")'],
   },
-	{
-    image:["https://images.urbndata.com/is/image/Anthropologie/65972366_067_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=960"],
-    name: "Mer-Sea & Co. Shimmer Sun Lotion",
-    price: "28.00",
-    productID: "Beauty29",
+{
+    image: "https://images.urbndata.com/is/image/Anthropologie/64281900_000_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=960",
+    name: "Fresh David Austin English Roses Bouquet",
+    price: "98.00",
+    productID: "Garden16",
     catagory: "Bestselling",
-    img: ['url("https://images.urbndata.com/is/image/Anthropologie/65972366_067_s?fit=constrain&hei=56&qlt=75")',
-    'url("https://images.urbndata.com/is/image/Anthropologie/65972366_040_s?fit=constrain&hei=56&qlt=75")'],
+    img: ['url("https://m.media-amazon.com/images/I/51UW1849rJL._AC_SY450_.jpg")'],
   },
-	{
-    image:["https://images.urbndata.com/is/image/Anthropologie/61389706_270_b10?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=960"],
-    name: "Feel Better De-Stress Ball",
-    price: "28.00",
-    productID: "Beauty30",
+{
+    image: "https://images.urbndata.com/is/image/Anthropologie/65582868_001_b2?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=960",
+    name: "Horiztonal Ridge Ceramic Pot + Saucer Set, 8",
+    price: "42.00",
+    productID: "Garden17",
     catagory: "Bestselling",
-    img: ['url("https://images.urbndata.com/is/image/Anthropologie/61389706_060_s?fit=constrain&hei=56&qlt=75")',
-    'url("https://images.urbndata.com/is/image/Anthropologie/61389706_270_s?fit=constrain&hei=56&qlt=75")'],
+    img: ['url("data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw8PDw8PDw8VFRUVDxUPFRUPFRUPFRUVFRUWFhUVFRUYHSggGBolHRUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDQ0NDg0NDisZFRkrKys3Ny0rKysrNysrNysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrK//AABEIAMIBAwMBIgACEQEDEQH/xAAXAAEBAQEAAAAAAAAAAAAAAAAAAQcC/8QAFhABAQEAAAAAAAAAAAAAAAAAAAER/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAH/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDERFAQAAAAAAACigioIqooAioqCoAoCKogCiKACAACACgqKg5FRQAABQQAAAABBQBQgKACCCoIogCgCgAACgAiACgoIICKAAKmCgigKigCGKgKAgAACKAACCoIogqqAgACACgCooIoIAqIKIIAooCKiooCKgAAKIoAACoAqACCoIAAAAKigAAKgAAKAAgqKgAKAIAAAqAAAoigAAAAVKoCAKEFEQABFBQBUVA0AAAAUQBAVAAAFQAAAABBUBVAAEUAAAAAAAAAFBAADAAAARcFEFRAAAAAAAAEAAFQFUAAIAIoACAqoAAoIAqACKAAAAgoCACAAoAIAAAKACCiAqgAAAAAAAoiggCgAAqQQAFUwBEQVAABAAABQAQAAAFFEVFAAAAAAAAAVQRUQFQBagUABQRUQAFQAAAQAAABQAQVAVUUAAAAAVFBFEUUEQAAAAAAQBUAAAAAAAEAAUFRQARFEUUAAVFBFAEAUAAAAAEQQFAAAAABAAUAEBUUUAAAAAAABQAFQAAUQAAAQqRQEhQAUARYAJQAWEAABAAFIAotQEBYAJVACigEAUf/2Q==")'],
   },
-
- 
-];
-
-   
+{
+    image: "https://images.urbndata.com/is/image/Anthropologie/64281793_000_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=960",
+    name: "Fresh Ginger + Bird of Paradise Bouquet",
+    price: "68.00",
+    productID: "Garden18",
+    catagory: "Bestselling",
+    img: ['url("https://m.media-amazon.com/images/I/51UW1849rJL._AC_SY450_.jpg")'],
+  },
+{
+    image: "https://images.urbndata.com/is/image/Anthropologie/69578573_111_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=960",
+    name: "Niwaki Rattan Handle Snips",
+    price: "48.00",
+    productID: "Garden19",
+    catagory: "Home",
+    img: ['url("https://m.media-amazon.com/images/I/51UW1849rJL._AC_SY450_.jpg")'],
+  },
+{
+    image: "https://images.urbndata.com/is/image/Anthropologie/69342681_000_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=960",
+    name: "Framed Reindeer Moss",
+    price: "98.00",
+    productID: "Garden20",
+    catagory: "Home",
+    img: ['url("https://m.media-amazon.com/images/I/51UW1849rJL._AC_SY450_.jpg")'],
+  },]
 
    let items=JSON.parse(localStorage.getItem("data"))||[]
 
@@ -1416,15 +1321,8 @@ display1(items)
     box.addEventListener("click", function(){
         send(el)
     })
-   // let im=document.createElement("img")
-    //im.setAttribute("src",el.image)
     let im=document.createElement("img")
-    // //console.log(el.image[0])
-     im.setAttribute("src",el.image[0])
-     im.setAttribute("class", "ChangeImg");
-    // // im.setAttribute("onmouseover", "setNewImg()");
-    // // im.setAttribute("onmouseout", "setOldImg()");
-    // box.append(im);
+    im.setAttribute("src",el.image)
     let nam=document.createElement("p")
     nam.innerText=el.name
     // if(item.price==""){
@@ -1432,26 +1330,33 @@ display1(items)
     if(el.price!=""){
     pr.innerText=`$ ${el.price}`
     }
-    let sz=document.createElement("p")
-     let colr=document.createElement("p")
+    // let sz=document.createElement("p")
+    let colr=document.createElement("p")
      for(let i=0;i<el.img.length;i++){
+        colr.setAttribute("class","coloursForPic")
         if(i<4){
         let inp=document.createElement("button")
         //let a=
        // console.log(a)
+      
         inp.style.backgroundImage =el.img[i]
-        colr.append(inp)
-        }else{
+    
+    
+        
+       
+       colr.append(inp)
+        }else
         colr.append("+"+(el.img.length-4))
-        break;
-        }
-     }
+     }    
+    
     box.append(im,nam,pr,colr)
     document.querySelector("#images").append(box)
+
    })
    localStorage.setItem("data", JSON.stringify(item))
  }
  function display1(items){
+
    items.forEach(function(el){
     let box=document.createElement("div")
     let im=document.createElement("img")
@@ -1460,10 +1365,11 @@ display1(items)
     nam.innerText=el.name
     let pr=document.createElement("p")
     pr.innerText=`$ ${el.price}`
-    let sz=document.createElement("p")
+    // let sz=document.createElement("p")
     // sz.innerText=el.size
-    box.append(im,nam,pr,sz)
+    box.append(im,nam,pr)
     document.querySelector("#images").append(box)
+
    })
    localStorage.setItem("data",JSON.stringify(item))
  }
@@ -1490,31 +1396,7 @@ document.querySelector("#price").addEventListener("click", pri)
     display(item)
  }
  
-
-
- // code for Imagechange on mouseover
-let changeImg=document.querySelectorAll(".ChangeImg")
-  //console.log(changeImg)
-   changeImg.forEach(function (el,index){
-    //console.log(el)
-   let imgOld;
-    el.addEventListener("mouseover", function Change(event,a=(item[index].image)){
-      event.preventDefault();
-     imgOld=el.getAttribute('src')
-     for(let i=0;i<a.length&& a.length>1;i++){
-     // console.log(el,a[i],imgOld)
-      if(a[i]==imgOld)
-     event.target.src=a[i+1]||a[i-1]
-     }
-      })
-    el.addEventListener("mouseout", function Change(event,a=(item[index].image)){
-      event.preventDefault();
-     event.target.src=imgOld
-      })
-   });
 </script>
 
-
 <script src="search.js"></script>
-
 <script src="Sign.js"></script>

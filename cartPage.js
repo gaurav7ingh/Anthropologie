@@ -22,7 +22,7 @@ function displayTable(cartDataArray) {
     img.setAttribute("src", element.image)
 
     let td2 = document.createElement("td")
-    td2.innerHTML = `${element.name + "<br><br>"+ "size :" + element.size}`
+    td2.innerHTML = `${element.name}`
     td2.style.textAlign = "left"
 
     let td3 = document.createElement("td")
@@ -35,7 +35,7 @@ function displayTable(cartDataArray) {
       //   console.log(price)
       return price
     }
-    td5.innerHTML = totalPrice(element) + "<br>"
+    td5.innerHTML = "$" +totalPrice(element) + "<br>"
 
     let td4 = document.createElement("td")
     let selectquantity = document.createElement("select")
@@ -49,19 +49,26 @@ function displayTable(cartDataArray) {
     selectquantity.addEventListener("change", function () {
       //   console.log(+selectquantity.value)
       if (eval(selectquantity.value >= 1)) {
-        td5.innerText = eval(element.price * selectquantity.value)
+        let total1=eval(element.price * selectquantity.value)
+        td5.innerText ="$"+total1.toFixed(2)
       }
       let subtotalFromDocument = document.querySelectorAll(
         ".subtotalFromDocument"
       )
+      console.log(subtotalFromDocument[0].innerText)
 
       let sumOfAll = 0
       for (let i = 0; i < subtotalFromDocument.length; i++) {
-        // console.log(+subtotalFromDocument[i].innerText);
-        sumOfAll += +subtotalFromDocument[i].innerText
+        //  console.log(+subtotalFromDocument[0].innerText);
+        let x = subtotalFromDocument[i].innerText
+        let y = "";
+        for(let j = 1; j < x.length;j++){
+          y += x[j]
+        }
+        sumOfAll += +y
         // console.log(sumOfAll)
       }
-     
+      
       
       subtotal.innerText = "$ " + sumOfAll
       total.innerText = "$ " + sumOfAll
@@ -99,16 +106,23 @@ function del(element, index) {
   subtotal.innerText ="$" +(eval(newSubTotal-element.price))
   localStorage.setItem("objarrayforBasket", JSON.stringify(cartDataArray))
   displayTable(cartDataArray)
+  window.location.reload()
 }
 if (subtotal.innerText == "") {
   let subtotalFromDocument = document.querySelectorAll(".subtotalFromDocument")
 
   let sumOfAll = 0
   for (let i = 0; i < subtotalFromDocument.length; i++) {
-    // console.log(+subtotalFromDocument[i].innerText);
-    sumOfAll += +subtotalFromDocument[i].innerText
+    //  console.log(+subtotalFromDocument[0].innerText);
+    let x = subtotalFromDocument[i].innerText
+    let y = "";
+    for(let j = 1; j < x.length;j++){
+      y += x[j]
+    }
+    sumOfAll += +y
     // console.log(sumOfAll)
   }
+  sumOfAll =  sumOfAll.toFixed(2)
   subtotal.innerText = "$ " + sumOfAll
   total.innerHTML = "$ "+ sumOfAll
 }
@@ -122,7 +136,7 @@ promo.addEventListener("click",function(){
     for(let i = 1; i <total.innerText.length;i++){
       priceAfterPromo += total.innerText[i];
     };
-    priceAfterPromo = eval(priceAfterPromo- priceAfterPromo*30/100)
+    priceAfterPromo = (eval(priceAfterPromo- priceAfterPromo*30/100)).toFixed(2)
     total.innerText="$ "+(priceAfterPromo)
     alert("Applied")
     localStorage.setItem("promo","done")

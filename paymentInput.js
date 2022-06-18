@@ -73,14 +73,14 @@ function fun() {
           window.location.reload()
           location.href = "OTP.html"
         } else {
-          alert("Invalid")
+          alert("Invalid Information")
         }
       })
     } else {
       alert("Please Check Your Card Number")
     }
   }else{
-    alert("Plese Enter a Correct Card Number")
+    alert("Invalid Card Details")
   }
 }
 
