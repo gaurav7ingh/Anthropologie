@@ -32,7 +32,7 @@ Buttons are given on top of image with the help of Position sticky and absolute,
 12. add to cart page --Fetching product image name and price from each product page using javascript
 13. ADD TO BASKET--  button on clicking on it each item gets added to cart this functionality is added using addevenlistener
 
-14. navbar -- so we have created a user friendly footer so you can go to contact us and our storys and you can connect to us by ous networks.
+14. footer -- so we have created a user friendly footer so you can go to contact us and our storys and you can connect to us by our networks.
 15. search -- we have added search functionlity for serching any-thing you have to go on perticular section and you will be find the result if it is not in the section it will say the item is not avalible.
 16. cart page -- in cart page we can increese the quantity of the product and acording to the quantity price will increese and if the cart have more then two items you can see the price of each and the total will be shown outside in chekout box with all the total.
 (note -- if you are not logged in then the adding in cart will not work.)
