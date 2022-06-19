@@ -1,7 +1,7 @@
 # Anthropologie
-This is the clone website of ANTHROPOLOGIE 
+This is the clone website of ANTHROPOLOGIE || https://www.anthropologie.com/
  
- The team menbers of the team is 
+ The #contributors is 
  1. Gaurav 
  2. Abhinav
  3. Akash
