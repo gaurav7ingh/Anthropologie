@@ -1,6 +1,9 @@
 # Anthropologie
 This is the clone website of ANTHROPOLOGIE || https://www.anthropologie.com/
  
+You can reffer this video for batter understanding --
+https://drive.google.com/file/d/1lmh4Y8xtgB1r0VkZJm04RBxSzAI6pA9w/view?usp=drivesdk
+
  The #contributors is 
  1. Gaurav 
  2. Abhinav
