@@ -1,5 +1,7 @@
 # Anthropologie || Clone
 This is the clone website of ANTHROPOLOGIE || https://www.anthropologie.com/
+
+##deployed link || https://anthropologie-1.netlify.app/index.html
  
 You can reffer this video for batter understanding --
 https://drive.google.com/file/d/1lmh4Y8xtgB1r0VkZJm04RBxSzAI6pA9w/view?usp=drivesdk
