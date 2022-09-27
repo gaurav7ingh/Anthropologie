@@ -1,4 +1,4 @@
-# Anthropologie
+# Anthropologie || Clone
 This is the clone website of ANTHROPOLOGIE || https://www.anthropologie.com/
  
 You can reffer this video for batter understanding --
@@ -15,7 +15,7 @@ https://drive.google.com/file/d/1lmh4Y8xtgB1r0VkZJm04RBxSzAI6pA9w/view?usp=drive
 We used HTML CSS JAVASCRIPT and local storage for making our website good and working.
 
 
-So in this clone website we added such functionlity as following...
+So in this clone website we added such functionlity as following:-
  1. sign up  -- in this the mobile number should be 10 digit and the password should be greater then 6 digit or it will pop an error alert.
  2. sign in  -- in this the user have to put the right email and the correct password to log in and after logIn the user can see his details in right side of the navbar. Only those  user can sign in which are successfully sign up otherwise gives error.
 and a logout button if user click on logout it will be logged out.
