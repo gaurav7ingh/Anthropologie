@@ -43,9 +43,9 @@ let validInput = [
     exp: "2025-06",
   },
   {
-    card: "1111111111111111",
+    card: "1234567890123456",
     cvv: "100",
-    exp: "2025-06",
+    exp: "2022-12",
   },
 ]
 const form = document.querySelector("#forCardInfo")
@@ -66,8 +66,8 @@ function fun() {
     if (flagForCard) {
       user.forEach(function (element) {
         if (
-         element.exp == form.monthExp.value &&
-         element.cvv == form.cvv.value
+          element.exp == form.monthExp.value &&
+          element.cvv == form.cvv.value
         ) {
           alert("OTP SENT TO YOUR NUMBER")
           window.location.reload()
@@ -79,7 +79,7 @@ function fun() {
     } else {
       alert("Please Check Your Card Number")
     }
-  }else{
+  } else {
     alert("Invalid Card Details")
   }
 }
