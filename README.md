@@ -1,23 +1,22 @@
 # Anthropologie || Clone
 This is the clone website of ANTHROPOLOGIE || https://www.anthropologie.com/
 
-## deployed link || https://anthropologie-1.netlify.app/index.html
+## deployed link || <a href=https://anthropologie-1.netlify.app/index.html>Anthropologie.com</a>
  
-You can reffer this video for batter understanding --
-https://drive.google.com/file/d/1lmh4Y8xtgB1r0VkZJm04RBxSzAI6pA9w/view?usp=drivesdk
+## Video Explainer of flow control || <a href="https://drive.google.com/file/d/1lmh4Y8xtgB1r0VkZJm04RBxSzAI6pA9w/view?usp=drivesdk"> **Video Drive Link** </a>
 
- The #contributors is 
- 1. Gaurav 
- 2. Abhinav
- 3. Akash
- 4. Ajit
- 5. Sachin
- 6. Madhukar 
+## Contributors
 
-We used HTML CSS JAVASCRIPT and local storage for making our website good and working.
+* [@Gaurav Singh](https://github.com/gaurav7ingh)
+* [@Ajit Shelake](https://github.com/ashelake)
+* [@Sachin Shukla](https://github.com/ShuklaSachin-2)
+* [@Akash Kumar](https://github.com/akash-github-25)
+* [@Abhinav](https://github.com/abhinav110695)
+
+#### We used HTML CSS JAVASCRIPT and local storage for making our website good and working.
 
 
-So in this clone website we added such functionlity as following:-
+### In this clone website we added such functionlity as following:-
  1. sign up  -- in this the mobile number should be 10 digit and the password should be greater then 6 digit or it will pop an error alert.
  2. sign in  -- in this the user have to put the right email and the correct password to log in and after logIn the user can see his details in right side of the navbar. Only those  user can sign in which are successfully sign up otherwise gives error.
 and a logout button if user click on logout it will be logged out.
